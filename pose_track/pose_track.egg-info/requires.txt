@@ -1,0 +1,13 @@
+numpy>=1.23
+pillow>=9.0
+scipy>=1.10
+opencv-python-headless>=4.8
+imageio>=2.31
+imageio-ffmpeg>=0.4
+
+[da2]
+torch>=2.0
+transformers>=4.40
+
+[dev]
+pytest>=7.0

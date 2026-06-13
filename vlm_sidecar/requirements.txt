@@ -1,0 +1,32 @@
+# Use a **dedicated venv** for this service (Python >=3.9). Do not install into the SimToolReal/Isaac
+# Python 3.8 environment — versions conflict (transformers/torch vs Isaac).
+#
+#   cd vlm_sidecar
+#   python3.10 -m venv .venv && source .venv/bin/activate   # or uv venv --python 3.10
+#
+# Fresh install: on space-limited machines, install **CPU PyTorch first** (avoids multi-GB CUDA wheels):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+# (If you need GPU inference, skip the first line so ``pip install -r`` pulls the default CUDA build.)
+#
+#   python app.py --host 127.0.0.1 --port 8765
+#
+# Default model is ``Qwen/Qwen3.5-0.8B`` (set ``VLM_MODEL_ID`` / ``--model-id`` for others). Plan VRAM accordingly.
+# For ``VLM_BACKEND=gemini``, install deps below; set ``GEMINI_API_KEY`` and optional ``VLM_GEMINI_MODEL``.
+
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.9
+transformers>=4.51,<5
+accelerate>=0.34.0
+safetensors>=0.4.0
+pillow>=10.0.0
+numpy>=1.23.0
+scipy>=1.10.0
+torch
+# Qwen3.5 hybrid layers: enables Transformers fast path (avoids “falling back to torch implementation”).
+# Requires CUDA PyTorch + a working compiler toolchain if wheels are missing for your platform.
+einops>=0.7.0
+flash-linear-attention>=0.2.2
+causal-conv1d>=1.4.0
+google-genai>=1.0.0

@@ -1,0 +1,2 @@
+[console_scripts]
+pose-track = pose_track.cli:main

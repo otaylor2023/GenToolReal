@@ -1,0 +1,43 @@
+{
+  "width": 640,
+  "height": 480,
+  "horizontal_fov_deg": 60.0,
+  "horizontal_fov_isaac_degrees_note": "Isaac ``CameraProperties.horizontal_fov`` is set in degrees (bindings default 90).",
+  "cam_pos_env": [
+    0.0,
+    -1.0,
+    1.03
+  ],
+  "cam_target_env": [
+    0.0,
+    0.0,
+    0.53
+  ],
+  "rgb_png": "00_rgb.png",
+  "depth_meters_float32_npy": "00_depth_meters_float32.npy",
+  "depth_meters_float32_npy_units": "meters",
+  "depth_meters_float32_npy_layout": "HxW row-major; same shape as RGB",
+  "depth_meters_float32_invalid": 0.0,
+  "depth_meters_float32_note": "Primary metric depth: float32 positive ray length from Isaac IMAGE_DEPTH (abs taken in capture). Use with cam_K for unprojection; prefer this over PNG when you need full range without saturation.",
+  "depth_png": "00_depth_uint16mm.png",
+  "depth_png_uint16mm_units": "millimeters",
+  "depth_png_uint16mm_scale": "uint16 value = round(clamp(depth_m * 1000, 0, 65535)); 0 = invalid",
+  "depth_png_uint16mm_max_range_m": 65.535,
+  "depth_preview": "00_depth_preview_u8.png",
+  "depth_preview_info": {
+    "depth_preview_not_metric": true,
+    "depth_preview_encoding": "inverse_depth_quantile_uint8",
+    "depth_preview_near_m": 0.8994213938713074,
+    "depth_preview_far_cap_m": 4.294382572174072,
+    "depth_preview_near_percentile": 1.0,
+    "depth_preview_far_percentile": 78.0,
+    "depth_preview_note": "Visualization only: disparity-normalized to [0,255]. Use depth_meters_float32_npy or depth_png_uint16mm for linear metric depth."
+  },
+  "cam_K": "cam_K.txt",
+  "rgb_mean": 121.79078450520834,
+  "depth_min": 0.8949422836303711,
+  "depth_max": 16.962251663208008,
+  "depth_mean": 3.174731731414795,
+  "depth_nonzero_frac": 1.0,
+  "backend": "isaac_gym"
+}

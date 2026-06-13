@@ -1,0 +1,9 @@
+{
+  "source_video": "cosmos_vlm/runs/run_0006/predict_0000/downloads/output_0000.mp4",
+  "isaac_session": "simtoolreal/runs/isaac_rgbd_once",
+  "rgb_frame0": "00_rgb.png",
+  "depth_uint16mm": "00_depth_uint16mm.png",
+  "depth_preview": "00_depth_preview_u8.png",
+  "depth_meters_npy": "00_depth_meters_float32.npy",
+  "cam_K": "cam_K.txt"
+}

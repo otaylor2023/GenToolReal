@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pose-track"
+version = "0.1.0"
+description = "Video → aligned RGB-D → FoundationPose → smoothed 6D trajectory (self-contained pilot)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "pillow>=9.0",
+  "scipy>=1.10",
+  "opencv-python-headless>=4.8",
+  "imageio>=2.31",
+  "imageio-ffmpeg>=0.4",
+  "av>=12",
+]
+
+[project.optional-dependencies]
+da2 = [
+  "torch>=2.0",
+  "torchvision>=0.15",
+  "transformers>=4.40",
+  "accelerate>=0.26",
+  "safetensors>=0.4",
+]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+pose-track = "pose_track.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+namespaces = false

@@ -1,0 +1,4 @@
+[
+  "tests/test_vendor_align.py::test_align_run_directory",
+  "tests/test_vendor_align.py::test_fit_scale_shift_identity"
+]

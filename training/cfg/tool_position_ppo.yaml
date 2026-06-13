@@ -1,0 +1,28 @@
+dataset_dir: "data_out"
+output_dir: "training/runs/tool_position_ppo"
+
+# PPO core
+total_updates: 2000
+rollout_steps: 64
+gamma: 0.99
+gae_lambda: 0.95
+clip_coef: 0.2
+value_coef: 0.5
+entropy_coef: 0.0
+lr: 0.0001
+ppo_epochs: 4
+minibatch_size: 64
+
+# Eval
+eval_every_updates: 25
+
+# Runtime
+device: "cuda"
+
+# Token-conditioned margins/reward (exact_above)
+token_success_bonus: 1.0
+exact_above_xy_margin_m: 0.01
+exact_above_z_margin_m: 0.01
+exact_above_w_xy: 1.5
+exact_above_w_z: 1.0
+

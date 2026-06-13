@@ -1,0 +1,32 @@
+dataset_dir: /home/ubuntu/Generative_STR/training/datasets/dataset_0004_canonical_s50_completed_only/position_shards_completed_only
+output_dir: /home/ubuntu/Generative_STR/training/runs/tool_position_ppo_dataset0004_canonical_completed_only
+total_updates: 1
+rollout_steps: 4
+gamma: 0.99
+gae_lambda: 0.95
+clip_coef: 0.2
+value_coef: 0.5
+entropy_coef: 0.0
+lr: 0.0001
+ppo_epochs: 1
+minibatch_size: 16
+eval_every_updates: 1
+eval_episodes: 2
+checkpoint_every_updates: 1
+log_every_updates: 1
+device: cuda
+num_envs: 2
+async_envs: false
+seed: 7
+token_success_bonus: 1.0
+exact_above_xy_margin_m: 0.01
+exact_above_z_margin_m: 0.01
+exact_above_w_xy: 1.5
+exact_above_w_z: 1.0
+use_real_qwen: false
+vl_model_id: Qwen/Qwen2.5-VL-7B-Instruct
+task_prompt_template: Move the specified tool keypoint to the target location described
+  by the instruction.
+world_scale_prompt_template: Coordinates are in meters in canonical world frame where
+  look_at is origin (0,0,0).
+run_tag: vla_smoke

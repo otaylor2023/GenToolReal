@@ -1,0 +1,57 @@
+# Brush procedural dataset overfit run (1 shard x 200 datapoints).
+# Run: python -m training.action_trajectory.train --config training/cfg/action_trajectory_brush_overfit.yaml
+
+dataset_dir: "training/datasets/dataset_0008_brush_procedural/shards"
+shard_path: "training/datasets/dataset_0008_brush_procedural/shards/brush_procedural_0000_shard.json"
+output_dir: "training/runs/action_trajectory"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_brush_smoke.json"
+
+epochs: 500
+batch_size: 64
+lr: 0.0005
+action_expert_lr: 0.0005
+label_proj_lr: 0.0005
+weight_decay: 0.0
+eval_every_epochs: 10
+checkpoint_every_epochs: 50
+log_every_steps: 10
+metrics_log_every_steps: 10
+device: "cuda"
+seed: 7
+num_workers: 2
+use_amp: false
+run_tag: ""
+train_fraction: 0.85
+val_fraction: 0.10
+
+clip_model_id: "openai/clip-vit-base-patch32"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+local_files_only: false
+
+d_model: 512
+num_heads: 8
+num_layers: 4
+ffn_multiplier: 4
+action_dropout: 0.0
+pos_norm_denom: 1.0
+
+integration_steps: 30
+inference_samples: 8
+
+table_label: "table surface center"
+table_xyz_world: [0.0, 0.0, 0.53]
+
+explode_instruction_variants: false
+
+normalization_eps: 1.0e-8
+
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "action_trajectory_overfit"
+wandb_run_name: ""
+wandb_tags: ["brush", "overfit", "dataset_0008", "one_shard"]
+wandb_notes: "Aggressive one-shard brush procedural trajectory overfit run"
+wandb_prediction_num_examples: 10
+
+cosine_warmup_steps: 50

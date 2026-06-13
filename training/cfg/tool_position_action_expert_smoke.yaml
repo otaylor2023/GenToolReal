@@ -1,0 +1,63 @@
+# One-epoch smoke run: tiny shard subset, fast eval.
+dataset_dir: "/home/ubuntu/Generative_STR/training/datasets/action_expert_smoke"
+output_dir: "training/runs/tool_position_action_expert"
+
+epochs: 1
+batch_size: 1
+lr: 0.0001
+weight_decay: 0.0001
+lora_lr: 0.00002
+action_expert_lr: 0.0001
+label_proj_lr: 0.0001
+eval_every_epochs: 1
+checkpoint_every_epochs: 1
+log_every_steps: 1
+
+device: "cuda"
+seed: 7
+num_workers: 0
+use_amp: true
+image_size: 224
+train_fraction: 0.85
+val_fraction: 0.10
+run_tag: "smoke"
+
+paligemma_model_id: "google/paligemma-3b-pt-224"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+local_files_only: false
+enable_gradient_checkpointing: true
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+
+d_model: 1024
+num_heads: 8
+num_action_expert_layers: 6
+ffn_multiplier: 4
+action_dropout: 0.1
+pos_norm_denom: 1.0
+max_keypoints: 30
+explode_instruction_variants: false
+sample_goal_in_constraint_region: false
+goal_rejection_sample_max_attempts: 128
+
+integration_steps: 5
+inference_samples: 2
+
+filter_invalid_train_examples: true
+invalid_sample_weight: 0.25
+z_min_offset_m: -0.02
+z_max_offset_m: 0.20
+above_xy_min_m: 0.025
+above_xy_max_m: 0.05
+near_xy_min_m: 0.075
+near_xy_max_m: 0.10
+directional_axis_min_m: 0.075
+directional_axis_max_m: 0.10
+directional_lateral_tol_m: 0.03
+between_midpoint_fraction_of_span: 0.40
+
+system_prompt: "You are a robot control assistant that grounds instructions in the image and object labels."
+
+normalization_stats_path: "training/cfg/normalization_stats.json"
+normalization_eps: 1.0e-8

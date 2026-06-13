@@ -1,0 +1,75 @@
+# First 10 shards after exclusions (scene_00001 omitted). Recompute stats after changing exclusions:
+# python -m training.action_no_image.compute_xyz_normalization \
+#   --dataset_dir training/datasets/dataset_0007/shards --max_shards 10 \
+#   --output training/cfg/normalization_stats_action_no_image_multi10_ds0007.json
+
+dataset_dir: "training/datasets/dataset_0007/shards"
+shard_path: ""
+max_shards: 10
+output_dir: "training/runs/action_no_image"
+normalization_stats_path: "training/cfg/normalization_stats_action_no_image_multi10_ds0007.json"
+
+epochs: 50
+batch_size: 64
+lr: 0.0003
+action_expert_lr: 0.0003
+label_proj_lr: 0.0003
+weight_decay: 0.0001
+eval_every_epochs: 1
+checkpoint_every_epochs: 5
+log_every_steps: 10
+metrics_log_every_steps: 10
+device: "cuda"
+seed: 7
+num_workers: 2
+use_amp: false
+run_tag: ""
+train_fraction: 0.85
+val_fraction: 0.10
+
+clip_model_id: "openai/clip-vit-base-patch32"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+local_files_only: false
+
+d_model: 512
+num_heads: 8
+num_layers: 4
+ffn_multiplier: 4
+action_dropout: 0.0
+pos_norm_denom: 1.0
+
+integration_steps: 50
+inference_samples: 16
+
+table_label: "table surface center"
+table_xyz_world: [0.0, 0.0, 0.53]
+
+explode_instruction_variants: false
+sample_goal_in_constraint_region: true
+goal_rejection_sample_max_attempts: 512
+
+normalization_eps: 1.0e-8
+
+z_min_offset_m: -0.02
+z_max_offset_m: 0.20
+above_xy_min_m: 0.025
+above_xy_max_m: 0.05
+near_xy_min_m: 0.075
+near_xy_max_m: 0.10
+directional_axis_min_m: 0.075
+directional_axis_max_m: 0.10
+directional_lateral_tol_m: 0.03
+between_midpoint_fraction_of_span: 0.40
+exact_above_xy_radius_m: 0.01
+
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "action_no_image"
+wandb_run_name: ""
+wandb_tags: []
+wandb_notes: ""
+wandb_prediction_num_examples: 8
+depth_occlusion_eps_m: 0.025
+
+cosine_warmup_steps: 200

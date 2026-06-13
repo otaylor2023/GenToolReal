@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "default": "brush_sweep_reactive_best",
+  "models": {
+    "brush_sweep_reactive_best": {
+      "description": "Single-task brush-sweep reactive VLA (legacy package default).",
+      "checkpoint": "checkpoint_best.pt",
+      "normalization_stats": "normalization_stats.json",
+      "tasks": [
+        "brush_sweep"
+      ],
+      "default_control_frame": "blue_brush",
+      "control_frames": [
+        "blue_brush",
+        "red_brush"
+      ]
+    },
+    "all_tasks_joint_pretrain_epoch10": {
+      "normalization_stats": "normalization_stats_all_tasks.json",
+      "config_yaml": "config_all_tasks_10epoch.yaml",
+      "source_config": "training/cfg/action_trajectory_all_tasks_10epoch.yaml",
+      "source_normalization_stats": "training/cfg/normalization_stats_action_trajectory_all_tasks.json",
+      "tasks": [
+        "brush_sweep",
+        "spatula_flip",
+        "spoon_pour",
+        "hammer_nail"
+      ],
+      "default_control_frame": "blue_brush",
+      "task_control_frames": {
+        "brush_sweep": [
+          "blue_brush",
+          "red_brush"
+        ],
+        "spatula_flip": [
+          "flat_spatula"
+        ],
+        "spoon_pour": [
+          "spoon_spatula"
+        ],
+        "hammer_nail": [
+          "claw_hammer",
+          "mallet_hammer"
+        ]
+      },
+      "description": "Joint pretrain on all four reactive closed-loop tasks. Epoch-10 checkpoint of the 10-epoch joint pretrain run.",
+      "checkpoint": "checkpoint_all_tasks_joint_pretrain_epoch0010.pt",
+      "source_checkpoint": "training/runs/action_trajectory/run_0026/checkpoint_epoch_0010.pt",
+      "epoch": 10,
+      "global_step": 60510
+    },
+    "all_tasks_grpo_iter10": {
+      "normalization_stats": "normalization_stats_all_tasks.json",
+      "config_yaml": "config_all_tasks_10epoch.yaml",
+      "source_config": "training/cfg/action_trajectory_all_tasks_10epoch.yaml",
+      "source_normalization_stats": "training/cfg/normalization_stats_action_trajectory_all_tasks.json",
+      "tasks": [
+        "brush_sweep",
+        "spatula_flip",
+        "spoon_pour",
+        "hammer_nail"
+      ],
+      "default_control_frame": "blue_brush",
+      "task_control_frames": {
+        "brush_sweep": [
+          "blue_brush",
+          "red_brush"
+        ],
+        "spatula_flip": [
+          "flat_spatula"
+        ],
+        "spoon_pour": [
+          "spoon_spatula"
+        ],
+        "hammer_nail": [
+          "claw_hammer",
+          "mallet_hammer"
+        ]
+      },
+      "description": "All-task GRPO post-train checkpoint from run_0051 after 10 GRPO iterations.",
+      "checkpoint": "checkpoint_all_tasks_grpo_iter00010.pt",
+      "source_checkpoint": "training/runs/action_trajectory_grpo/run_0051/checkpoint_iter_00010.pt",
+      "grpo_iteration": 10
+    },
+    "all_tasks_grpo_iter20": {
+      "normalization_stats": "normalization_stats_all_tasks.json",
+      "config_yaml": "config_all_tasks_10epoch.yaml",
+      "source_config": "training/cfg/action_trajectory_all_tasks_10epoch.yaml",
+      "source_normalization_stats": "training/cfg/normalization_stats_action_trajectory_all_tasks.json",
+      "tasks": [
+        "brush_sweep",
+        "spatula_flip",
+        "spoon_pour",
+        "hammer_nail"
+      ],
+      "default_control_frame": "blue_brush",
+      "task_control_frames": {
+        "brush_sweep": [
+          "blue_brush",
+          "red_brush"
+        ],
+        "spatula_flip": [
+          "flat_spatula"
+        ],
+        "spoon_pour": [
+          "spoon_spatula"
+        ],
+        "hammer_nail": [
+          "claw_hammer",
+          "mallet_hammer"
+        ]
+      },
+      "description": "All-task GRPO post-train checkpoint from run_0051 after 20 GRPO iterations.",
+      "checkpoint": "checkpoint_all_tasks_grpo_iter00020.pt",
+      "source_checkpoint": "training/runs/action_trajectory_grpo/run_0051/checkpoint_iter_00020.pt",
+      "grpo_iteration": 20
+    },
+    "spatula_flip_pretrain_epoch10": {
+      "description": "Single-task spatula-flip reactive VLA, epoch-10 pretrain (run_0021).",
+      "checkpoint": "checkpoint_spatula_flip_pretrain_epoch0010.pt",
+      "normalization_stats": "normalization_stats_spatula_flip.json",
+      "config_yaml": "config_spatula_flip_reactive_10epoch.yaml",
+      "source_checkpoint": "training/runs/action_trajectory/run_0021/checkpoint_epoch_0010.pt",
+      "source_config": "training/cfg/action_trajectory_spatula_flip_reactive_10epoch.yaml",
+      "source_normalization_stats": "training/cfg/normalization_stats_action_trajectory_spatula_flip_reactive.json",
+      "epoch": 10,
+      "global_step": 11120,
+      "tasks": [
+        "spatula_flip"
+      ],
+      "default_control_frame": "flat_spatula",
+      "task_control_frames": {
+        "spatula_flip": [
+          "flat_spatula"
+        ]
+      }
+    },
+    "spoon_pour_pretrain_epoch10": {
+      "description": "Single-task spoon-pour reactive VLA, epoch-10 pretrain (run_0022).",
+      "checkpoint": "checkpoint_spoon_pour_pretrain_epoch0010.pt",
+      "normalization_stats": "normalization_stats_spoon_pour.json",
+      "config_yaml": "config_spoon_pour_reactive_10epoch.yaml",
+      "source_checkpoint": "training/runs/action_trajectory/run_0022/checkpoint_epoch_0010.pt",
+      "source_config": "training/cfg/action_trajectory_spoon_pour_reactive_10epoch.yaml",
+      "source_normalization_stats": "training/cfg/normalization_stats_action_trajectory_spoon_pour_reactive.json",
+      "epoch": 10,
+      "global_step": 13420,
+      "tasks": [
+        "spoon_pour"
+      ],
+      "default_control_frame": "spoon_spatula",
+      "task_control_frames": {
+        "spoon_pour": [
+          "spoon_spatula"
+        ]
+      }
+    },
+    "hammer_nail_pretrain_epoch10": {
+      "description": "Single-task hammer-nail reactive VLA, epoch-10 pretrain (run_0023).",
+      "checkpoint": "checkpoint_hammer_nail_pretrain_epoch0010.pt",
+      "normalization_stats": "normalization_stats_hammer_nail.json",
+      "config_yaml": "config_hammer_nail_reactive_10epoch.yaml",
+      "source_checkpoint": "training/runs/action_trajectory/run_0023/checkpoint_epoch_0010.pt",
+      "source_config": "training/cfg/action_trajectory_hammer_nail_reactive_10epoch.yaml",
+      "source_normalization_stats": "training/cfg/normalization_stats_action_trajectory_hammer_nail_reactive.json",
+      "epoch": 10,
+      "global_step": 17940,
+      "tasks": [
+        "hammer_nail"
+      ],
+      "default_control_frame": "mallet_hammer",
+      "task_control_frames": {
+        "hammer_nail": [
+          "claw_hammer",
+          "mallet_hammer"
+        ]
+      }
+    },
+    "all_tasks_grpo_iter30": {
+      "normalization_stats": "normalization_stats_all_tasks.json",
+      "config_yaml": "config_all_tasks_10epoch.yaml",
+      "source_config": "training/cfg/action_trajectory_all_tasks_10epoch.yaml",
+      "source_normalization_stats": "training/cfg/normalization_stats_action_trajectory_all_tasks.json",
+      "tasks": [
+        "brush_sweep",
+        "spatula_flip",
+        "spoon_pour",
+        "hammer_nail"
+      ],
+      "default_control_frame": "blue_brush",
+      "task_control_frames": {
+        "brush_sweep": [
+          "blue_brush",
+          "red_brush"
+        ],
+        "spatula_flip": [
+          "flat_spatula"
+        ],
+        "spoon_pour": [
+          "spoon_spatula"
+        ],
+        "hammer_nail": [
+          "claw_hammer",
+          "mallet_hammer"
+        ]
+      },
+      "description": "All-task GRPO post-train checkpoint from run_0051 after 30 GRPO iterations.",
+      "checkpoint": "checkpoint_all_tasks_grpo_iter00030.pt",
+      "source_checkpoint": "training/runs/action_trajectory_grpo/run_0051/checkpoint_iter_00030.pt",
+      "grpo_iteration": 30
+    },
+    "all_tasks_grpo_iter40": {
+      "normalization_stats": "normalization_stats_all_tasks.json",
+      "config_yaml": "config_all_tasks_10epoch.yaml",
+      "source_config": "training/cfg/action_trajectory_all_tasks_10epoch.yaml",
+      "source_normalization_stats": "training/cfg/normalization_stats_action_trajectory_all_tasks.json",
+      "tasks": [
+        "brush_sweep",
+        "spatula_flip",
+        "spoon_pour",
+        "hammer_nail"
+      ],
+      "default_control_frame": "blue_brush",
+      "task_control_frames": {
+        "brush_sweep": [
+          "blue_brush",
+          "red_brush"
+        ],
+        "spatula_flip": [
+          "flat_spatula"
+        ],
+        "spoon_pour": [
+          "spoon_spatula"
+        ],
+        "hammer_nail": [
+          "claw_hammer",
+          "mallet_hammer"
+        ]
+      },
+      "description": "All-task GRPO post-train checkpoint from run_0051 after 40 GRPO iterations.",
+      "checkpoint": "checkpoint_all_tasks_grpo_iter00040.pt",
+      "source_checkpoint": "training/runs/action_trajectory_grpo/run_0051/checkpoint_iter_00040.pt",
+      "grpo_iteration": 40
+    }
+  }
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "closed_loop"
+version = "0.1.0"
+description = "Standalone brush VLA closed-loop inference for SimToolReal robot deployment"
+readme = "README.md"
+# 3.8 floor: the SimToolReal robot runs ROS Noetic (Python 3.8); viz_interactive
+# ships a PurePath.is_relative_to shim for that interpreter.
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20",
+    "torch>=2.0",
+    "transformers>=4.30",
+]
+
+[project.optional-dependencies]
+# CLI flag parsing + colored logging used by the SimToolReal ROS node
+# (deployment/goal_pose_node_closed_loop.py). rospy / isaacgymenvs come from the
+# robot's existing ROS workspace, not pip.
+robot = ["tyro>=0.5", "termcolor>=1.1"]
+# Interactive viser viz + control-frame annotation tools.
+viz = ["viser>=0.2", "trimesh>=4.0", "tyro>=0.5"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["closed_loop*"]

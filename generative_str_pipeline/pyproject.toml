@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "generative-str-pipeline"
+version = "0.1.0"
+description = "Modular glue for AI-generated demonstrations → SimToolReal / DexToolBench"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "tyro>=0.7",
+  "pyyaml>=6.0",
+  "Pillow>=9.0",
+  "imageio>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+annotate = [
+  "viser>=1.0",
+  "trimesh>=4.0",
+  "rtree>=1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["generative_str*"]
+
+[project.scripts]
+gstr = "generative_str.cli:main"
+gstr-benchmark-video-gen = "generative_str.run_video_benchmark:main"

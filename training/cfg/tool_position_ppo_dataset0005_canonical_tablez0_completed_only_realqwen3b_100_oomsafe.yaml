@@ -1,0 +1,44 @@
+dataset_dir: "/home/ubuntu/Generative_STR/training/datasets/dataset_0005_canonical_tablez0_s50_completed_only/position_shards_completed_only"
+output_dir: "/home/ubuntu/Generative_STR/training/runs/tool_position_ppo_dataset0005_canonical_tablez0_completed_only"
+
+# PPO core
+total_updates: 100
+rollout_steps: 32
+gamma: 0.99
+gae_lambda: 0.95
+clip_coef: 0.2
+value_coef: 0.5
+entropy_coef: 0.0
+lr: 0.0001
+ppo_epochs: 4
+minibatch_size: 128
+
+# Eval
+eval_every_updates: 10
+eval_episodes: 16
+checkpoint_every_updates: 10
+log_every_updates: 5
+
+# Runtime
+device: "cuda"
+num_envs: 8
+async_envs: true
+seed: 7
+run_tag: "realqwen3b100_env8_mb128"
+
+# Token-conditioned margins/reward (exact_above)
+token_success_bonus: 1.0
+exact_above_xy_margin_m: 0.01
+exact_above_z_margin_m: 0.01
+exact_above_w_xy: 1.5
+exact_above_w_z: 1.0
+
+# VLA / Qwen
+use_real_qwen: true
+vl_model_id: "Qwen/Qwen2.5-VL-3B-Instruct"
+task_prompt_template: "You are a robot tool-positioning policy. Your goal is to output the absolute 3D target position (x, y, z) in meters where the tool should move, based on the instruction. Movement is defined using the specified tool keypoint. You are given the scene image and a set of scene keypoints with coordinates to help you understand where objects are located. Return only the target position."
+world_scale_prompt_template: "Coordinate system: canonical tabletop frame in meters. The tabletop surface is z = 0. Axis directions are fixed: +X points to the right relative to the camera, +Y points away from the camera, and +Z points upward. All scene keypoint coordinates and the tool keypoint position are provided in this same frame."
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+qwen_local_files_only: true
+qwen_forward_chunk_size: 1
+

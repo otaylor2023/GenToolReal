@@ -1,0 +1,53 @@
+dataset_dir: "/home/ubuntu/Generative_STR/training/datasets/dataset_0005_canonical_tablez0_s50_completed_only/position_shards_completed_only"
+output_dir: "training/runs/tool_position_bc"
+
+# BC core
+epochs: 100
+batch_size: 4
+lr: 0.0001
+weight_decay: 0.0001
+head_lr: 0.0001
+backbone_lr: 0.00001
+warmstart_mse_epochs: 20
+
+# Split (shard-level)
+train_fraction: 0.85
+val_fraction: 0.10
+
+# Eval/checkpointing
+eval_every_epochs: 1
+checkpoint_every_epochs: 5
+log_every_steps: 25
+
+# Runtime
+device: "cuda"
+seed: 7
+num_workers: 4
+use_amp: true
+image_size: 224
+
+# MLP head
+mlp_hidden_dims: [1024, 512, 256]
+mlp_dropout: 0.1
+
+# Qwen backbone
+use_real_qwen: true
+vl_model_id: "Qwen/Qwen2.5-VL-3B-Instruct"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+qwen_local_files_only: false
+qwen_forward_chunk_size: 2
+unfreeze_last_n_layers: 8
+enable_gradient_checkpointing: true
+
+# Region-aware loss
+z_min_offset_m: -0.02
+z_max_offset_m: 0.20
+above_xy_min_m: 0.025
+above_xy_max_m: 0.05
+near_xy_min_m: 0.075
+near_xy_max_m: 0.10
+directional_axis_min_m: 0.075
+directional_axis_max_m: 0.10
+directional_lateral_tol_m: 0.03
+between_midpoint_fraction_of_span: 0.40
+

@@ -1,0 +1,71 @@
+# Brush stroke_sweep reactive closed-loop dataset (dataset_0011).
+# Generate:
+#   python -m generative_str_pipeline.build_dataset_0011_brush_sweep_reactive \
+#     --output_dir training/datasets/dataset_0011_brush_sweep_reactive/shards \
+#     --num_shards 200 --scenes_per_shard 150 --seed 0
+# Norm stats:
+#   python -m training.action_trajectory.compute_xyz_normalization \
+#     --dataset_dir training/datasets/dataset_0011_brush_sweep_reactive/shards \
+#     --max_shards 200 \
+#     --output training/cfg/normalization_stats_action_trajectory_brush_sweep_reactive.json \
+#     --table_xyz 0.0 0.0 0.53
+# Train:
+#   python -m training.action_trajectory.train \
+#     --config training/cfg/action_trajectory_brush_sweep_reactive.yaml
+
+dataset_dir: "training/datasets/dataset_0011_brush_sweep_reactive/shards"
+shard_path: ""
+max_shards: 200
+output_dir: "training/runs/action_trajectory"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_brush_sweep_reactive.json"
+
+epochs: 50
+batch_size: 128
+lr: 0.0005
+action_expert_lr: 0.0005
+label_proj_lr: 0.0005
+weight_decay: 0.00005
+eval_every_epochs: 5
+checkpoint_every_epochs: 5
+log_every_steps: 25
+metrics_log_every_steps: 25
+device: "cuda"
+seed: 7
+num_workers: 4
+use_amp: false
+run_tag: ""
+train_fraction: 0.90
+val_fraction: 0.05
+
+clip_model_id: "openai/clip-vit-base-patch32"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+local_files_only: false
+
+d_model: 512
+num_heads: 8
+num_layers: 4
+ffn_multiplier: 4
+action_dropout: 0.0
+pos_norm_denom: 1.0
+
+integration_steps: 30
+inference_samples: 4
+
+table_label: "table surface center"
+table_xyz_world: [0.0, 0.0, 0.53]
+
+explode_instruction_variants: false
+
+normalization_eps: 1.0e-8
+
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "action_trajectory_sweep_reactive"
+wandb_run_name: ""
+wandb_run_prefix: "pretrain_VLA"
+wandb_tags: ["brush", "dataset_0011", "stroke_sweep", "reactive", "closed_loop"]
+wandb_notes: "Reactive closed-loop: dense local plans, object tracks brush during sweep, windowed (current state -> next 6 steps), disturbances"
+wandb_prediction_num_examples: 8
+
+cosine_warmup_steps: 500

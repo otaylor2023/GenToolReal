@@ -1,0 +1,15 @@
+{
+  "xyz_mean": [
+    -0.020286732827991837,
+    -0.0584702876084498,
+    0.5964985961062007
+  ],
+  "xyz_std": [
+    0.39327181345556106,
+    0.34571810248603646,
+    0.061321522380993615
+  ],
+  "norm_eps": 1e-08,
+  "num_points": 96401,
+  "dataset_dir": "/home/ubuntu/Generative_STR/training/datasets/dataset_0006/shards"
+}

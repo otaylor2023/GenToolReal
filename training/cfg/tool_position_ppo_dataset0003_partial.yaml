@@ -1,0 +1,28 @@
+dataset_dir: "/home/ubuntu/Generative_STR/training/datasets/dataset_0003_5552_s50_from_existing/position_shards"
+output_dir: "/home/ubuntu/Generative_STR/training/runs/tool_position_ppo_dataset0003_partial"
+
+# PPO core
+total_updates: 2000
+rollout_steps: 64
+gamma: 0.99
+gae_lambda: 0.95
+clip_coef: 0.2
+value_coef: 0.5
+entropy_coef: 0.0
+lr: 0.0001
+ppo_epochs: 4
+minibatch_size: 64
+
+# Eval
+eval_every_updates: 25
+
+# Runtime
+device: "cuda"
+
+# Token-conditioned margins/reward (exact_above)
+token_success_bonus: 1.0
+exact_above_xy_margin_m: 0.01
+exact_above_z_margin_m: 0.01
+exact_above_w_xy: 1.5
+exact_above_w_z: 1.0
+

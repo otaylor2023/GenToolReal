@@ -1,0 +1,19 @@
+# Factorial experiment definition — expand into run configs for orchestrator.
+capture_ids:
+  - lab_brush_001
+
+video_models:
+  - cogvideox_i2v
+  - wan_i2v
+  - ltx_i2v
+
+mde_models:
+  - da3
+  - marigold
+  - unidepth_v2
+  - moge2
+
+seeds: [0, 1, 2]
+
+# Full grid: capture_ids × video_models × mde_models × seeds (optional)
+# Pipeline A (FP): runs/<capture>/<video>/<mde>/fp/

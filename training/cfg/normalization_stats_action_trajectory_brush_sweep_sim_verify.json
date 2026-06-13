@@ -1,0 +1,27 @@
+{
+  "scene_id": "multi",
+  "shard_path": "/home/ubuntu/Generative_STR/training/datasets/dataset_0010_brush_sweep_sim/shards/brush_sweep_sim_0000_shard.json",
+  "shard_paths": [
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0010_brush_sweep_sim/shards/brush_sweep_sim_0000_shard.json"
+  ],
+  "scene_ids": [
+    "brush_sweep_sim_0000"
+  ],
+  "xyz_mean": [
+    -0.0058122427035559665,
+    0.0007906721692415886,
+    0.5962730547040701
+  ],
+  "xyz_std": [
+    0.11556166944918396,
+    0.09697163448506628,
+    0.08416740008007176
+  ],
+  "norm_eps": 1e-08,
+  "num_points": 2000,
+  "table_xyz_world": [
+    0.0,
+    0.0,
+    0.53
+  ]
+}

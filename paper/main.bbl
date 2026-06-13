@@ -1,0 +1,133 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ahn et~al.(2022)Ahn, Brohan, Brown, Chebotar, Cortes, David, Finn, Fu,
+  Gopalakrishnan, Hausman, et~al.]{saycan}
+Michael Ahn, Anthony Brohan, Noah Brown, Yevgen Chebotar, Omar Cortes, Byron
+  David, Chelsea Finn, Chuyuan Fu, Keerthana Gopalakrishnan, Karol Hausman,
+  et~al.
+\newblock Do as i can, not as i say: Grounding language in robotic affordances.
+\newblock \emph{arXiv preprint arXiv:2204.01691}, 2022.
+
+\bibitem[Black et~al.(2024)Black, Brown, Driess, Esmail, Equi, Finn, Fusai,
+  Groom, Hausman, Ichter, et~al.]{pi0}
+Kevin Black, Noah Brown, Danny Driess, Adnan Esmail, Max Equi, Chelsea Finn,
+  Niccol{\`o} Fusai, Lachy Groom, Karol Hausman, Brian Ichter, et~al.
+\newblock $\pi_0$: A vision-language-action flow model for general robot
+  control.
+\newblock \emph{arXiv preprint arXiv:2410.24164}, 2024.
+
+\bibitem[Brohan et~al.(2023)Brohan, Brown, Carbajal, Chebotar, Chen,
+  Choromanski, Ding, Driess, Dubey, Finn, et~al.]{rt2}
+Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Xi~Chen,
+  Krzysztof Choromanski, Tianli Ding, Danny Driess, Avinava Dubey, Chelsea
+  Finn, et~al.
+\newblock Rt-2: Vision-language-action models transfer web knowledge to robotic
+  control.
+\newblock \emph{arXiv preprint arXiv:2307.15818}, 2023.
+
+\bibitem[Chi et~al.(2024)Chi, Xu, Feng, Cousineau, Du, Burchfiel, Song, and
+  Tedrake]{diffusionpolicy}
+Cheng Chi, Zhenjia Xu, Siyuan Feng, Eric Cousineau, Yilun Du, Ben Burchfiel,
+  Shuran Song, and Russ Tedrake.
+\newblock Diffusion policy: Visuomotor policy learning via action diffusion.
+\newblock \emph{The International Journal of Robotics Research}, 2024.
+
+\bibitem[de~Bakker et~al.(2025)de~Bakker, Hejna, Lum, Celik, Taranovic,
+  Blessing, Neumann, Bohg, and Sadigh]{scaffolding}
+Victor de~Bakker, Joey Hejna, Tyler G.~W. Lum, Onur Celik, Anja Taranovic,
+  Dominik Blessing, Gerhard Neumann, Jeannette Bohg, and Dorsa Sadigh.
+\newblock Scaffolding dexterous manipulation with vision-language models.
+\newblock \emph{arXiv preprint arXiv:2506.19212}, 2025.
+
+\bibitem[Kedia et~al.(2026)Kedia, Lum, Bohg, and Liu]{simtoolreal}
+Kushal Kedia, Tyler G.~W. Lum, Jeannette Bohg, and C.~Karen Liu.
+\newblock Simtoolreal: An object-centric policy for zero-shot dexterous tool
+  manipulation.
+\newblock \emph{arXiv preprint arXiv:2602.16863}, 2026.
+
+\bibitem[Khazatsky et~al.(2024)Khazatsky, Pertsch, Nair, Balakrishna, Dasari,
+  Karamcheti, Nasiriany, Srirama, Chen, Ellis, et~al.]{droid}
+Alexander Khazatsky, Karl Pertsch, Suraj Nair, Ashwin Balakrishna, Sudeep
+  Dasari, Siddharth Karamcheti, Soroush Nasiriany, Mohan~Kumar Srirama,
+  Lawrence~Yunliang Chen, Kevin Ellis, et~al.
+\newblock Droid: A large-scale in-the-wild robot manipulation dataset.
+\newblock \emph{arXiv preprint arXiv:2403.12945}, 2024.
+
+\bibitem[Kim et~al.(2024)Kim, Pertsch, Karamcheti, Xiao, Balakrishna, Nair,
+  Rafailov, Foster, Lam, Sanketi, et~al.]{openvla}
+Moo~Jin Kim, Karl Pertsch, Siddharth Karamcheti, Tony Xiao, Ashwin Balakrishna,
+  Suraj Nair, Rafael Rafailov, Ethan Foster, Grace Lam, Pannag Sanketi, et~al.
+\newblock Openvla: An open-source vision-language-action model.
+\newblock \emph{arXiv preprint arXiv:2406.09246}, 2024.
+
+\bibitem[Lipman et~al.(2023)Lipman, Chen, Ben-Hamu, Nickel, and
+  Le]{flowmatching}
+Yaron Lipman, Ricky T.~Q. Chen, Heli Ben-Hamu, Maximilian Nickel, and Matt Le.
+\newblock Flow matching for generative modeling.
+\newblock In \emph{International Conference on Learning Representations}, 2023.
+
+\bibitem[Mittal et~al.(2025)Mittal, Roth, Tigue, Richard, Zhang, Du,
+  Serrano-Munoz, Yao, Zurbr{\"u}gg, Rudin, et~al.]{isaaclab}
+Mayank Mittal, Philipp Roth, Joseph Tigue, Alexander Richard, Oliver Zhang,
+  Peng Du, Alvaro Serrano-Munoz, Xinyu Yao, Nicolas Zurbr{\"u}gg, Nikita Rudin,
+  et~al.
+\newblock Isaac lab: A gpu-accelerated simulation framework for multi-modal
+  robot learning.
+\newblock \emph{arXiv preprint arXiv:2511.04831}, 2025.
+
+\bibitem[{NVIDIA} et~al.(2025){NVIDIA}, Bjorck, Casta{\~n}eda, Cherniadev, Da,
+  Ding, Fan, Fang, Fox, et~al.]{groot}
+{NVIDIA}, Filip Bjorck, Fernando Casta{\~n}eda, Nikita Cherniadev, Xingyu Da,
+  Rui Ding, Linxi Fan, Yuxin Fang, Dieter Fox, et~al.
+\newblock Gr00t n1: An open foundation model for generalist humanoid robots.
+\newblock \emph{arXiv preprint arXiv:2503.14734}, 2025.
+
+\bibitem[{Physical Intelligence}(2025)]{pi05}
+{Physical Intelligence}.
+\newblock $\pi_{0.5}$: A vision-language-action model with open-world
+  generalization.
+\newblock \emph{arXiv preprint arXiv:2504.16054}, 2025.
+
+\bibitem[{Physical Intelligence}(2026)]{pi07}
+{Physical Intelligence}.
+\newblock $\pi_{0.7}$: A steerable generalist robotic foundation model with
+  emergent capabilities.
+\newblock \emph{arXiv preprint arXiv:2604.15483}, 2026.
+
+\bibitem[Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal,
+  Sastry, Askell, Mishkin, Clark, et~al.]{clip}
+Alec Radford, Jong~Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh,
+  Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark,
+  et~al.
+\newblock Learning transferable visual models from natural language
+  supervision.
+\newblock In \emph{Proceedings of the 38th International Conference on Machine
+  Learning}, pages 8748--8763. PMLR, 2021.
+
+\bibitem[Schulman et~al.(2017)Schulman, Wolski, Dhariwal, Radford, and
+  Klimov]{ppo}
+John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov.
+\newblock Proximal policy optimization algorithms.
+\newblock \emph{arXiv preprint arXiv:1707.06347}, 2017.
+
+\bibitem[Shao et~al.(2024)Shao, Wang, Zhu, Xu, Song, Bi, Zhang, Zhang, Li, Wu,
+  and Guo]{deepseekmath}
+Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei
+  Zhang, Mingchuan Zhang, Y.~K. Li, Y.~Wu, and Daya Guo.
+\newblock Deepseekmath: Pushing the limits of mathematical reasoning in open
+  language models.
+\newblock \emph{arXiv preprint arXiv:2402.03300}, 2024.
+
+\bibitem[Wen et~al.(2024)Wen, Yang, Kautz, and Birchfield]{foundationpose}
+Bowen Wen, Wei Yang, Jan Kautz, and Stan Birchfield.
+\newblock Foundationpose: Unified 6d pose estimation and tracking of novel
+  objects.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, 2024.
+
+\end{thebibliography}

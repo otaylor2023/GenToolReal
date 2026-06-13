@@ -1,0 +1,63 @@
+# One-shot IsaacGym visualization for the current spatula pretrain.
+# Uses the existing spatula_flip GRPO rollout/video path, but only runs one
+# tiny iteration to produce local MP4s instead of full sim training.
+
+config: "training/cfg/action_trajectory_spatula_flip_reactive_10epoch.yaml"
+checkpoint: "training/runs/action_trajectory/run_0024/checkpoint_best.pt"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_spatula_flip_reactive.json"
+
+policy_exec_config: "policy_exec/pretrained_policy/config.yaml"
+policy_exec_checkpoint: "policy_exec/pretrained_policy/model.pth"
+control_frame: "generative_str_pipeline/assets/object_control_points/flat_spatula.json"
+
+task_type: "spatula_flip"
+object_name: "flat_spatula"
+tool_obj_path: "policy_exec/assets/urdf/dextoolbench/spatula/flat_spatula/flat_spatula.obj"
+
+output_dir: "training/runs/action_trajectory_grpo_spatula_video"
+
+num_iterations: 1
+num_scenes: 1
+group_size: 1
+reward_rollout_repeats: 1
+integration_steps: 30
+sde_sigma: 0.0
+grpo_clip: 0.2
+kl_coef: 0.0
+inner_epochs: 1
+lr: 0.0
+steps_per_segment: 1
+lift_z: 0.0
+z_offset: 0.0
+max_rollout_steps: 900
+seed: 0
+
+reward_w_flip: 1.0
+flip_inverted_dot_max: -0.5
+flip_settle_tol_m: 0.04
+flip_material_half_z_m: 0.006
+flip_partial_scale: 0.5
+off_table_drop_m: 0.10
+
+skip_sim: false
+headless: true
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "spatula_flip_video"
+wandb_run_name: ""
+wandb_run_prefix: "spatula_sim_video_run0024"
+wandb_tags: ["dataset_0012", "spatula", "flip", "isaacgym_video", "run_0024"]
+wandb_notes: "One-shot IsaacGym video rollout from run_0024 spatula pretrain checkpoint."
+
+use_closed_loop: true
+closed_loop_chunk_size: 5
+closed_loop_max_replans: 30
+closed_loop_max_steps_per_chunk: 200
+closed_loop_max_total_steps: 3000
+closed_loop_max_stall_replans: 3
+
+video_every: 1
+video_capture_interval: 4
+video_fps: 15
+video_num_envs: 1

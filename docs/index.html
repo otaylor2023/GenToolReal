@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GenToolReal: Generative Trajectory Prediction for Reactive Tool Manipulation via Language-Conditioned Flow Matching</title>
+  <meta name="description" content="A reactive tool-surface-conditioned Language-Action flow model for brush sweeping and nail hammering with contact-frame trajectories.">
+
+  <!-- Bulma CSS via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap">
+  <!-- Font Awesome via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Academicons via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <nav class="navbar is-fixed-top is-spaced site-nav" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item navbar-title" href="#top">GenToolReal</a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="mainNav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item nav-link" href="#abstract">Abstract</a>
+        <a class="navbar-item nav-link" href="#method">Method</a>
+        <a class="navbar-item nav-link" href="#tasks">Tasks</a>
+        <a class="navbar-item nav-link" href="#training">Training</a>
+        <a class="navbar-item nav-link" href="#deployment">Deployment</a>
+        <a class="navbar-item nav-link" href="#gallery">Rollouts</a>
+        <a class="navbar-item nav-link" href="#failures">Failures</a>
+        <a class="navbar-item nav-link" href="#results">Highlights</a>
+      </div>
+    </div>
+  </nav>
+
+  <span id="top"></span>
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero is-light hero-head">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="title is-2 publication-title">
+          GenToolReal: Generative Trajectory Prediction for Reactive Tool Manipulation via Language-Conditioned Flow Matching
+        </h1>
+
+        <div class="is-size-5 publication-authors">
+          <span class="author-block">
+            <a href="mailto:otaylor@stanford.edu">Olivia Taylor</a>,
+          </span>
+          <span class="author-block">
+            <a href="mailto:tylerlum@stanford.edu">Tyler Lum</a><sup>*</sup>,
+          </span>
+          <span class="author-block">
+            <a href="mailto:bohg@stanford.edu">Jeannette Bohg</a><sup>*</sup>
+          </span>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+          <span class="author-block">Department of Computer Science, Stanford University</span>
+        </div>
+        <div class="is-size-6 publication-authors">
+          <span class="author-block">CS191W Senior Project</span>
+        </div>
+        <div class="is-size-7 publication-authors author-footnote">
+          <span class="author-block"><sup>*</sup>Advising role.</span>
+        </div>
+
+        <!-- Link buttons -->
+        <div class="publication-links">
+          <span class="link-block">
+            <a href="static/pdf/main.pdf" class="button is-rounded is-dark" target="_blank" rel="noopener">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span>
+              <span>Paper</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="#" class="button is-rounded is-dark" data-todo="GitHub link">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>Code</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="#gallery" class="button is-rounded is-dark">
+              <span class="icon"><i class="fas fa-video"></i></span>
+              <span>Video</span>
+            </a>
+          </span>
+        </div>
+
+        <!-- Teaser video -->
+        <div class="teaser">
+          <video class="teaser-video" autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/brush-success-blue.mp4" type="video/mp4">
+          </video>
+          <p class="caption">
+            Closed-loop reactive sweeping on a 22-DoF Sharpa hand mounted on a 7-DoF KUKA iiwa 14 arm.
+            A single policy predicts short-horizon contact-frame tool trajectories and replans as the scene changes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ABSTRACT ============================ -->
+  <section id="abstract" class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Abstract</h2>
+      <div class="content has-text-justified abstract-text">
+        <p>
+          We present a reactive tool-surface-conditioned Language-Action model for dexterous tool manipulation that predicts short-horizon tool trajectories from a natural-language instruction and the current state of the tool and the object it acts on.
+          We demonstrate the approach on brush sweeping and nail hammering: two behaviors whose useful tool surfaces&mdash;the brush bristles and the hammer face&mdash;differ substantially.
+          We train it on procedurally generated demonstrations in which the planner repeatedly observes the scene, predicts the next stretch of motion, and lets the object move before observing again, so the policy learns to react as the scene changes.
+          We then refine the pretrained policy in simulation with group relative policy optimization (GRPO).
+          Trajectories are expressed in a contact frame anchored to the tool's functional surface, so the policy is not keyed to a hard-coded tool identity but grounded by the functional surface that should contact the world.
+          The predicted poses are handed to the SimToolReal controller, which executes them on a 22-DoF Sharpa five-fingered hand mounted on a 7-DoF KUKA iiwa 14 arm.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ METHOD ============================ -->
+  <section id="method" class="section has-background-light-soft">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Method Overview</h2>
+      <div class="content has-text-justified">
+        <p>
+          The policy represents a tool trajectory as a sequence of <strong>contact-frame waypoints</strong>.
+          Each of the \(K{=}15\) waypoints is a 9-vector: a <em>contact point</em> on the tool's functional surface,
+          the outward <em>contact normal</em>, and an <em>in-plane direction</em> that fixes the surface orientation
+          (for example, the direction a brush sweeps or the orientation of a hammer face). A right-handed triad and a
+          fixed tool-specific transform turn each waypoint into a 6-DoF tool goal pose. Because the policy reasons about
+          where the working surface should meet the world&mdash;rather than about a hard-coded tool identity&mdash;the same
+          contact-frame policy form can support tools with different functional surfaces.
+        </p>
+        <p>
+          Manipulation runs as a <strong>closed loop</strong>:
+          <em>observe</em> the current tool and object state &rarr;
+          <em>predict</em> a short-horizon 15-waypoint trajectory &rarr;
+          <em>execute</em> only the beginning of it &rarr;
+          <em>reobserve</em> and <em>replan</em>.
+          This mirrors how people use tools&mdash;sweeping crumbs that scatter or hammering a nail that sinks
+          incrementally&mdash;so the policy reacts as the
+          scene evolves instead of committing to one static goal.
+        </p>
+      </div>
+
+      <div class="columns is-centered method-figs">
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/hammer_control_frame.png" alt="Hammer control frame example">
+          </figure>
+          <p class="caption">Hammer: the contact frame sits on the striking face, where the tool meets the nail.</p>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/brush_trajectory.png" alt="Predicted brush sweep trajectory">
+          </figure>
+          <p class="caption">Brush: a predicted sweep, traced out as a sequence of contact-frame waypoints along the bristle surface.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TASKS ============================ -->
+  <section id="tasks" class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Demonstrated Tool Behaviors</h2>
+      <p class="subtitle is-6 has-text-centered has-text-grey">
+        The same contact-frame policy form is demonstrated on brush sweeping and nail hammering.
+      </p>
+      <div class="columns is-multiline is-centered task-grid">
+        <div class="column is-half">
+          <div class="box task-card">
+            <span class="icon-text">
+              <span class="icon has-text-link"><i class="fas fa-broom"></i></span>
+              <span class="task-title">Sweep with a brush</span>
+            </span>
+            <p>Push loose debris across the table and into a receptacle.</p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="box task-card">
+            <span class="icon-text">
+              <span class="icon has-text-link"><i class="fas fa-hammer"></i></span>
+              <span class="task-title">Hammer a nail</span>
+            </span>
+            <p>Strike a nail head repeatedly until it reaches a target depth.</p>
+          </div>
+        </div>
+      </div>
+      <p class="caption has-text-centered">
+        The contact-frame representation is designed to extend to new functional surfaces; flipping and pouring are future extensions rather than demonstrated results here.
+      </p>
+
+      <!-- Real-robot highlights -->
+      <div class="columns is-centered task-clips">
+        <div class="column is-half">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/brush-success-red.mp4" type="video/mp4">
+          </video>
+          <p class="caption has-text-centered">Sweeping with a brush.</p>
+        </div>
+        <div class="column is-half">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/hammer-success-short.mp4" type="video/mp4">
+          </video>
+          <p class="caption has-text-centered">Hammering a nail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TRAINING ============================ -->
+  <section id="training" class="section has-background-light-soft">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Training Process</h2>
+      <div class="content has-text-justified">
+        <p>
+          <strong>Stage 1 &mdash; Procedural reactive demonstrations.</strong>
+          Analytic expert planners generate reactive tool-use demonstrations. Each scene is rolled out as a closed
+          loop: at every step the expert plans a 15-waypoint trajectory, executes the first few waypoints, and lets the
+          scene update before planning again. Between steps the scene is perturbed&mdash;jitter or knock the object,
+          scatter debris, or land a weak hammer hit&mdash;so the expert must recover and the data teaches the
+          policy to <em>react</em> rather than follow a fixed script. The demonstrated training and deployment focus on
+          brush sweeping and nail hammering, with diverse templated natural-language instructions to encourage
+          generalization across phrasing.
+        </p>
+        <p>
+          <strong>Stage 2 &mdash; Joint pretraining and GRPO refinement.</strong>
+          A single state-conditioned Language-Action transformer (hidden size 512, 4 layers, 8 heads) is pretrained on
+          reactive contact-frame trajectories with conditional flow matching, then refined in simulation with group
+          relative policy optimization (GRPO). GRPO samples several trajectories per scene, executes each in closed-loop
+          simulation, normalizes advantages within the group, and updates with a clipped surrogate that keeps the policy
+          close to the pretrained model.
+        </p>
+      </div>
+
+      <!-- Pipeline strip -->
+      <div class="pipeline">
+        <div class="pipeline-stage">
+          <div class="pipeline-icon"><i class="fas fa-cogs"></i></div>
+          <div class="pipeline-label">Procedural<br>reactive demos</div>
+        </div>
+        <div class="pipeline-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="pipeline-stage">
+          <div class="pipeline-icon"><i class="fas fa-wave-square"></i></div>
+          <div class="pipeline-label">Flow-matching<br>pretraining</div>
+        </div>
+        <div class="pipeline-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="pipeline-stage">
+          <div class="pipeline-icon"><i class="fas fa-bullseye"></i></div>
+          <div class="pipeline-label">GRPO refinement<br>(simulation)</div>
+        </div>
+        <div class="pipeline-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="pipeline-stage">
+          <div class="pipeline-icon"><i class="fas fa-robot"></i></div>
+          <div class="pipeline-label">Closed-loop<br>deployment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ DEPLOYMENT ============================ -->
+  <section id="deployment" class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Interaction with SimToolReal</h2>
+      <div class="content has-text-justified">
+        <p>
+          At deployment a single closed-loop controller handles brush sweeping and nail hammering. Tool and object poses are estimated with
+          <strong>FoundationPose</strong>&mdash;the same estimator SimToolReal uses&mdash;so perception integrates
+          cleanly across the two systems. The estimated poses, together with the instruction, form a compact
+          <strong>symbolic 6D state</strong> (tool contact pose, object pose, destination, table). The
+          <strong>state-conditioned Language-Action flow model</strong> predicts 15 contact-frame waypoints, which are
+          converted to tool goal poses and handed to the <strong>SimToolReal controller</strong> for execution on the
+          22-DoF Sharpa hand and 7-DoF KUKA iiwa 14 arm. The controller executes only the beginning of the plan, then
+          the system reobserves and replans&mdash;closing the loop back to FoundationPose.
+        </p>
+      </div>
+
+      <!-- Boxes-and-arrows diagram -->
+      <div class="flow-diagram">
+        <div class="flow-row">
+          <div class="flow-box flow-perc"><i class="fas fa-camera"></i><span>FoundationPose<br><small>pose estimation</small></span></div>
+          <div class="flow-conn"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-box"><i class="fas fa-list"></i><span>Symbolic 6D state<br><small>tool pose, object, destination, table</small></span></div>
+          <div class="flow-conn"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-box flow-model"><i class="fas fa-wave-square"></i><span>State-conditioned<br>LA flow model</span></div>
+        </div>
+        <div class="flow-row flow-row-down">
+          <div class="flow-spacer"></div>
+          <div class="flow-conn flow-conn-hidden"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-spacer"></div>
+          <div class="flow-conn flow-conn-hidden"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-down"><i class="fas fa-arrow-down"></i></div>
+        </div>
+        <div class="flow-row flow-row-reverse">
+          <div class="flow-box flow-robot"><i class="fas fa-robot"></i><span>Sharpa hand (22-DoF)<br>+ KUKA iiwa 14 (7-DoF)</span></div>
+          <div class="flow-conn"><i class="fas fa-arrow-left"></i></div>
+          <div class="flow-box"><i class="fas fa-hand-holding"></i><span>SimToolReal<br>controller</span></div>
+          <div class="flow-conn"><i class="fas fa-arrow-left"></i></div>
+          <div class="flow-box"><i class="fas fa-route"></i><span>15 contact-frame<br>waypoints &rarr; tool poses</span></div>
+        </div>
+        <div class="flow-feedback">
+          <i class="fas fa-rotate-left"></i>
+          <span>reobserve &amp; replan &rarr; back to FoundationPose</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ GALLERY ============================ -->
+  <section id="gallery" class="section has-background-light-soft">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Robot Rollouts</h2>
+
+      <div class="columns is-multiline is-centered">
+        <div class="column is-half">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/brush-success-blue.mp4" type="video/mp4">
+          </video>
+          <p class="caption has-text-centered">Sweeping with the blue brush</p>
+        </div>
+        <div class="column is-half">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/brush-success-red.mp4" type="video/mp4">
+          </video>
+          <p class="caption has-text-centered">Sweeping with the red brush</p>
+        </div>
+        <div class="column is-half">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/hammer-success-long.mp4" type="video/mp4">
+          </video>
+          <p class="caption has-text-centered">Hammering a nail</p>
+        </div>
+        <div class="column is-half">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/brush-success-blue-2.mp4" type="video/mp4">
+          </video>
+          <p class="caption has-text-centered">Using the blue brush to sweep</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FAILURES ============================ -->
+  <section id="failures" class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Failure Modes &amp; Limitations</h2>
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="static/videos/hammer-failure-tracking.mp4" type="video/mp4">
+          </video>
+          <p class="caption">
+            <strong>Failure &mdash; hammer pose tracking error.</strong> A FoundationPose tracking error propagates
+            end-to-end: once the estimated pose drifts, the predicted goals no longer match reality.
+          </p>
+        </div>
+      </div>
+      <div class="content has-text-justified">
+        <p>The paper documents several limitations:</p>
+        <ul>
+          <li><strong>FoundationPose tracking loss.</strong> Both our system and SimToolReal rely on FoundationPose, so tracking errors propagate end-to-end and can break execution.</li>
+          <li><strong>Dropped objects.</strong> The SimToolReal policy occasionally loses or drops the object during execution, after which the predicted goals no longer match the scene.</li>
+          <li><strong>Orientation-discontinuity-induced fast motion.</strong> On some replans the policy negates the in-plane direction (a ~180&deg; rotation about the contact normal), producing a discontinuous goal-orientation jump that can make the arm move too fast and drop the object.</li>
+          <li><strong>Preferred-orientation bias.</strong> The policy tends to prefer a particular tool orientation and forces the trajectory to follow it even when another orientation would work equally well.</li>
+        </ul>
+        <p>
+          <strong>Proposed fixes.</strong> We expect these behaviors to respond to more aggressive domain randomization
+          during training and a penalty for extra steps in simulation (discouraging redundant motions and a fixed
+          orientation), alongside orientation-aware training, image conditioning, and larger-scale reinforcement learning. At
+          deployment we currently mitigate these discontinuities by aligning each new plan's orientation to the previous one.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ RESULTS ============================ -->
+  <section id="results" class="section has-background-light-soft">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Highlights</h2>
+      <p class="subtitle is-6 has-text-centered has-text-grey">
+        What a single tool-surface-conditioned Language-Action policy can do across demonstrated tool behaviors.
+      </p>
+      <div class="columns is-multiline is-centered highlight-grid">
+        <div class="column is-half">
+          <div class="box highlight-card">
+            <span class="icon-text">
+              <span class="icon has-text-link"><i class="fas fa-rotate"></i></span>
+              <span class="task-title">Reactive closed-loop control</span>
+            </span>
+            <p>
+              The policy predicts a short-horizon contact-frame trajectory, executes the start of it, then reobserves
+              and replans&mdash;adapting as debris scatters or a nail sinks.
+            </p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="box highlight-card">
+            <span class="icon-text">
+              <span class="icon has-text-link"><i class="fas fa-robot"></i></span>
+              <span class="task-title">Real-robot deployment</span>
+            </span>
+            <p>
+              Sweeping and hammering run end-to-end on a 22-DoF Sharpa hand mounted on a 7-DoF KUKA iiwa 14 arm,
+              driven only by FoundationPose state and language. See the <a href="#gallery">rollout gallery</a>.
+            </p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="box highlight-card">
+            <span class="icon-text">
+              <span class="icon has-text-link"><i class="fas fa-bullseye"></i></span>
+              <span class="task-title">Faithful low-level tracking</span>
+            </span>
+            <p>
+              Handed the predicted contact-frame waypoints, the SimToolReal controller tracks the intended tool poses
+              with near-perfect fidelity (&approx; 0.99), so high-level plans translate cleanly into hand motion.
+            </p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="box highlight-card">
+            <span class="icon-text">
+              <span class="icon has-text-link"><i class="fas fa-layer-group"></i></span>
+              <span class="task-title">One contact-frame policy across tools</span>
+            </span>
+            <p>
+              A single compact transformer is conditioned by the functional tool surface/contact frame, allowing the
+              same policy form to cover brush sweeping and hammer nailing without a hard-coded tool identity.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="caption has-text-centered">
+        This is a research prototype: brush sweeping and hammering are the demonstrated behaviors today, while
+        spatula flipping and spoon pouring remain future extensions.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          GenToolReal &mdash; Stanford University CS191W Senior Project
+        </p>
+        <p>
+          Department of Computer Science, Stanford University
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MathJax for inline math -->
+  <script>
+    window.MathJax = { tex: { inlineMath: [['\\(', '\\)']] }, svg: { fontCache: 'global' } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+  <!-- Custom JS -->
+  <script src="static/js/index.js"></script>
+</body>
+</html>

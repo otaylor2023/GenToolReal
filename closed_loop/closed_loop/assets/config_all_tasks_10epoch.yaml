@@ -1,0 +1,78 @@
+# Joint 10-epoch pretraining on all four reactive closed-loop tasks.
+# Requires regenerated shards + joint normalization stats (see plan).
+
+dataset_dir: ""
+shard_path: ""
+max_shards: 0
+
+dataset_dirs:
+  - "training/datasets/dataset_0011_brush_sweep_reactive/shards"
+  - "training/datasets/dataset_0012_spatula_flip_reactive/shards"
+  - "training/datasets/dataset_0013_spoon_pour_reactive/shards"
+  - "training/datasets/dataset_0014_hammer_nail_reactive/shards"
+max_shards_per_dir: [680, 200, 200, 200]
+
+output_dir: "training/runs/action_trajectory"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_all_tasks.json"
+
+epochs: 10
+batch_size: 128
+lr: 0.0005
+action_expert_lr: 0.0005
+label_proj_lr: 0.0005
+weight_decay: 0.00005
+eval_every_epochs: 5
+checkpoint_every_epochs: 5
+log_every_steps: 25
+metrics_log_every_steps: 25
+device: "cuda"
+seed: 7
+num_workers: 4
+use_amp: false
+run_tag: "all_tasks_reactive_10epoch"
+train_fraction: 0.90
+val_fraction: 0.05
+
+clip_model_id: "openai/clip-vit-base-patch32"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+local_files_only: false
+
+d_model: 512
+num_heads: 8
+num_layers: 4
+ffn_multiplier: 4
+action_dropout: 0.0
+pos_norm_denom: 1.0
+
+integration_steps: 30
+inference_samples: 4
+
+table_label: "table surface center"
+table_xyz_world: [0.0, 0.0, 0.53]
+
+explode_instruction_variants: false
+
+normalization_eps: 1.0e-8
+
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "action_trajectory_all_tasks_reactive"
+wandb_run_name: ""
+wandb_run_prefix: "all_tasks_pretrain_VLA_10epoch"
+wandb_tags:
+  - "brush"
+  - "spatula"
+  - "spoon"
+  - "hammer"
+  - "dataset_0011"
+  - "dataset_0012"
+  - "dataset_0013"
+  - "dataset_0014"
+  - "reactive"
+  - "closed_loop"
+  - "10epoch"
+wandb_notes: "10-epoch joint pretrain on brush sweep, spatula flip, spoon pour, hammer nail."
+wandb_prediction_num_examples: 16
+
+cosine_warmup_steps: 500

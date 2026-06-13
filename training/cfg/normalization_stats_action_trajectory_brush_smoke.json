@@ -1,0 +1,27 @@
+{
+  "scene_id": "brush_procedural_0000",
+  "shard_path": "/home/ubuntu/Generative_STR/training/datasets/dataset_0008_brush_procedural/shards/brush_procedural_0000_shard.json",
+  "shard_paths": [
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0008_brush_procedural/shards/brush_procedural_0000_shard.json"
+  ],
+  "scene_ids": [
+    "brush_procedural_0000"
+  ],
+  "xyz_mean": [
+    -0.008444363615877177,
+    3.718498018038783e-05,
+    0.6281525514048079
+  ],
+  "xyz_std": [
+    0.14238878896481558,
+    0.13399844448045584,
+    0.07914425528235913
+  ],
+  "norm_eps": 1e-08,
+  "num_points": 1840,
+  "table_xyz_world": [
+    0.0,
+    0.0,
+    0.53
+  ]
+}

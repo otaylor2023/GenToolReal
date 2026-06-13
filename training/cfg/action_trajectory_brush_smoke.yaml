@@ -1,0 +1,58 @@
+# Brush procedural dataset smoke (1 shard x 200 datapoints).
+# Generate: python -m generative_str_pipeline.build_dataset_0008_brush_procedural --num_shards 1 --datapoints_per_shard 200 --seed 0
+# Norm stats: python -m training.action_trajectory.compute_xyz_normalization --shard_path training/datasets/dataset_0008_brush_procedural/shards/brush_procedural_0000_shard.json --output training/cfg/normalization_stats_action_trajectory_brush_smoke.json --table_xyz 0.0 0.0 0.53
+
+dataset_dir: "training/datasets/dataset_0008_brush_procedural/shards"
+shard_path: "training/datasets/dataset_0008_brush_procedural/shards/brush_procedural_0000_shard.json"
+output_dir: "training/runs/action_trajectory"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_brush_smoke.json"
+
+epochs: 10
+batch_size: 32
+lr: 0.0003
+action_expert_lr: 0.0003
+label_proj_lr: 0.0003
+weight_decay: 0.0001
+eval_every_epochs: 1
+checkpoint_every_epochs: 5
+log_every_steps: 10
+metrics_log_every_steps: 10
+device: "cuda"
+seed: 7
+num_workers: 2
+use_amp: false
+run_tag: ""
+train_fraction: 0.85
+val_fraction: 0.10
+
+clip_model_id: "openai/clip-vit-base-patch32"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+local_files_only: false
+
+d_model: 512
+num_heads: 8
+num_layers: 4
+ffn_multiplier: 4
+action_dropout: 0.0
+pos_norm_denom: 1.0
+
+integration_steps: 30
+inference_samples: 8
+
+table_label: "table surface center"
+table_xyz_world: [0.0, 0.0, 0.53]
+
+explode_instruction_variants: false
+
+normalization_eps: 1.0e-8
+
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "action_trajectory"
+wandb_run_name: ""
+wandb_tags: ["brush", "smoke", "dataset_0008"]
+wandb_notes: "One-shard brush procedural trajectory smoke test"
+wandb_prediction_num_examples: 10
+
+cosine_warmup_steps: 200

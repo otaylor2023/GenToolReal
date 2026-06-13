@@ -1,0 +1,59 @@
+# Run-specific 10-epoch pretraining config for dataset_0012.
+# Keeps the base spatula config intact while shortening this run.
+
+dataset_dir: "training/datasets/dataset_0012_spatula_flip_reactive/shards"
+shard_path: ""
+max_shards: 200
+output_dir: "training/runs/action_trajectory"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_spatula_flip_reactive.json"
+
+epochs: 10
+batch_size: 128
+lr: 0.0005
+action_expert_lr: 0.0005
+label_proj_lr: 0.0005
+weight_decay: 0.00005
+eval_every_epochs: 5
+checkpoint_every_epochs: 5
+log_every_steps: 25
+metrics_log_every_steps: 25
+device: "cuda"
+seed: 7
+num_workers: 4
+use_amp: false
+run_tag: "spatula_flip_reactive_10epoch"
+train_fraction: 0.90
+val_fraction: 0.05
+
+clip_model_id: "openai/clip-vit-base-patch32"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+local_files_only: false
+
+d_model: 512
+num_heads: 8
+num_layers: 4
+ffn_multiplier: 4
+action_dropout: 0.0
+pos_norm_denom: 1.0
+
+integration_steps: 30
+inference_samples: 4
+
+table_label: "table surface center"
+table_xyz_world: [0.0, 0.0, 0.53]
+
+explode_instruction_variants: false
+
+normalization_eps: 1.0e-8
+
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "action_trajectory_spatula_flip_reactive"
+wandb_run_name: ""
+wandb_run_prefix: "spatula_pretrain_VLA_10epoch"
+wandb_tags: ["spatula", "dataset_0012", "spatula_flip", "reactive", "closed_loop", "10epoch"]
+wandb_notes: "10-epoch pretrain on reactive closed-loop spatula flip dataset_0012."
+wandb_prediction_num_examples: 8
+
+cosine_warmup_steps: 500

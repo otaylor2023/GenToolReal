@@ -1,0 +1,43 @@
+# Minimal spatula-flip GRPO smoke: 2 envs, 1 iteration, no wandb/video.
+config: "training/cfg/action_trajectory_spatula_flip_reactive.yaml"
+checkpoint: "training/runs/action_trajectory/run_0017/checkpoint_best.pt"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_spatula_flip_reactive.json"
+
+policy_exec_config: "policy_exec/pretrained_policy/config.yaml"
+policy_exec_checkpoint: "policy_exec/pretrained_policy/model.pth"
+control_frame: "generative_str_pipeline/assets/object_control_points/flat_spatula.json"
+
+task_type: "spatula_flip"
+object_name: "flat_spatula"
+tool_obj_path: "policy_exec/assets/urdf/dextoolbench/spatula/flat_spatula/flat_spatula.obj"
+
+output_dir: "training/runs/action_trajectory_grpo"
+
+num_iterations: 1
+num_scenes: 1
+group_size: 2
+reward_rollout_repeats: 1
+integration_steps: 30
+sde_sigma: 0.02
+max_rollout_steps: 600
+seed: 0
+
+reward_w_flip: 1.0
+flip_inverted_dot_max: -0.5
+flip_settle_tol_m: 0.04
+flip_material_half_z_m: 0.006
+flip_partial_scale: 0.5
+off_table_drop_m: 0.10
+
+skip_sim: false
+headless: true
+use_wandb: false
+
+use_closed_loop: true
+closed_loop_chunk_size: 5
+closed_loop_max_replans: 4
+closed_loop_max_steps_per_chunk: 120
+closed_loop_max_total_steps: 600
+closed_loop_max_stall_replans: 2
+
+video_every: 0

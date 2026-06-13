@@ -1,0 +1,109 @@
+# =============================================================================
+# GenToolReal .gitignore
+#
+# Layout philosophy:
+#   - `main`    : core GenToolReal code only (training, data-gen, closed_loop,
+#                 paper, docs). Heavy data, vendored deps, and exploratory/unused
+#                 code are NOT here.
+#   - `archive` : full historical snapshot. The "off-main (archived) code"
+#                 section below is force-added there (`git add -f ...`).
+#
+# Vendored deps and large data are never committed on any branch; see README.md
+# and POLICY_EXEC_SETUP.md for how to obtain/reconstruct them.
+# =============================================================================
+
+# ----- Secrets / credentials (never commit) -----
+simtoolreal-*.json
+.env
+.env.*
+*.pem
+*-service-account*.json
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+
+# ----- Virtual environments -----
+.venv/
+venv/
+**/.venv/
+**/venv/
+
+# ----- Model checkpoints / weights -----
+# Large weights are kept out of git. closed_loop/ deployable checkpoints and
+# policy_exec/pretrained_policy/model.pth must be added separately (release
+# artifact, scp, or Git LFS). See README.md.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# ----- Large data / generated artifacts -----
+data/
+training/datasets/
+training/runs/
+training/verification/
+runs/
+logs/
+wandb/
+outputs/
+models/
+
+# ----- Generated media (docs/static/ website assets stay tracked) -----
+/videos/
+/videos copy/
+
+# ----- Archives -----
+*.zip
+*.tar
+*.tar.gz
+closed_loop_deploy.zip
+
+# ----- Vendored / external dependencies (documented, not committed) -----
+# See README.md ("External dependencies") and POLICY_EXEC_SETUP.md.
+/simtoolreal/
+/FoundationPose/
+/sam-3d-objects/
+/policy_exec/
+# Exploratory sim integrations that are mostly vendored meshes/weights
+# (~3 GB / ~1 GB). Too large for git on any branch; reconstructable from the
+# vendored sim assets. Not archived in git.
+/isaaclab_simtoolreal/
+/isaacsim_envs/
+
+# ----- Off-main (archived) code -----
+# Exploratory / superseded work. Excluded from `main`; archived on the `archive`
+# branch (see README.md "Branches") via a force-add that skips venvs/runs:
+#   git add -f training/action_expert training/bc training/ppo \
+#       training/action_no_image training/gemini \
+#       cosmos_vlm ':!cosmos_vlm/runs' \
+#       vlm_sidecar ':!vlm_sidecar/.venv' \
+#       pose_track ':!pose_track/.venv' \
+#       gemini_robotics_er.py veo_frame_to_video.py
+training/action_expert/
+training/bc/
+training/ppo/
+training/action_no_image/
+training/gemini/
+cosmos_vlm/
+vlm_sidecar/
+pose_track/
+gemini_robotics_er.py
+veo_frame_to_video.py
+
+# ----- OS / editor / tooling -----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
+.cursor/

@@ -1,0 +1,22 @@
+# closed_loop runtime requirements.
+#
+# Prefer `pip install -e .` (reads pyproject.toml). This file is provided for
+# environments that install requirements directly. See INSTALL.md for the full
+# walkthrough (robot deployment, viz, and the CLIP text-encoder cache).
+
+# --- Core inference (always required) ---
+numpy>=1.20
+torch>=2.0
+transformers>=4.30   # CLIP text tower (openai/clip-vit-base-patch32)
+
+# --- Robot ROS node (deployment/goal_pose_node_closed_loop.py) ---
+# Equivalent to: pip install -e ".[robot]"
+# rospy + isaacgymenvs are provided by the robot's ROS workspace, not pip.
+tyro>=0.5
+termcolor>=1.1
+
+# --- Interactive viser viz / control-frame annotation (optional) ---
+# Equivalent to: pip install -e ".[viz]"
+# Uncomment if you need the GUI tools:
+# viser>=0.2
+# trimesh>=4.0

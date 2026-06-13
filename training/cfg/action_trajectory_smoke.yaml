@@ -1,0 +1,57 @@
+# Placeholder config for action_trajectory (procedural data gen TBD).
+# Fill dataset_dir / shard_path / normalization_stats_path once shards exist.
+
+dataset_dir: "TBD"
+shard_path: "TBD"
+output_dir: "training/runs/action_trajectory"
+normalization_stats_path: "TBD"
+
+epochs: 50
+batch_size: 64
+lr: 0.0003
+action_expert_lr: 0.0003
+label_proj_lr: 0.0003
+weight_decay: 0.0001
+eval_every_epochs: 1
+checkpoint_every_epochs: 5
+log_every_steps: 10
+metrics_log_every_steps: 10
+device: "cuda"
+seed: 7
+num_workers: 2
+use_amp: false
+run_tag: ""
+train_fraction: 0.85
+val_fraction: 0.10
+
+clip_model_id: "openai/clip-vit-base-patch32"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+local_files_only: false
+
+d_model: 512
+num_heads: 8
+num_layers: 4
+ffn_multiplier: 4
+action_dropout: 0.0
+pos_norm_denom: 1.0
+
+integration_steps: 50
+inference_samples: 16
+
+table_label: "table surface center"
+table_xyz_world: [0.0, 0.0, 0.53]
+
+explode_instruction_variants: false
+
+normalization_eps: 1.0e-8
+
+use_wandb: false
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "action_trajectory"
+wandb_run_name: ""
+wandb_tags: []
+wandb_notes: ""
+wandb_prediction_num_examples: 8
+
+cosine_warmup_steps: 200

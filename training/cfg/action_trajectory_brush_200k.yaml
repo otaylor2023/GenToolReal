@@ -1,0 +1,63 @@
+# Brush procedural dataset full run (100 shards x 2000 datapoints = 200k).
+# Generate:
+#   python -m generative_str_pipeline.build_dataset_0008_brush_procedural --output_dir training/datasets/dataset_0008_brush_procedural_200k/shards --num_shards 100 --datapoints_per_shard 2000 --seed 0
+# Norm stats:
+#   python -m training.action_trajectory.compute_xyz_normalization --dataset_dir training/datasets/dataset_0008_brush_procedural_200k/shards --max_shards 100 --output training/cfg/normalization_stats_action_trajectory_brush_200k.json --table_xyz 0.0 0.0 0.53
+# Train:
+#   python -m training.action_trajectory.train --config training/cfg/action_trajectory_brush_200k.yaml
+
+dataset_dir: "training/datasets/dataset_0008_brush_procedural_200k/shards"
+shard_path: ""
+max_shards: 100
+output_dir: "training/runs/action_trajectory"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_brush_200k.json"
+
+epochs: 50
+batch_size: 128
+lr: 0.0005
+action_expert_lr: 0.0005
+label_proj_lr: 0.0005
+weight_decay: 0.00005
+eval_every_epochs: 5
+checkpoint_every_epochs: 5
+log_every_steps: 25
+metrics_log_every_steps: 25
+device: "cuda"
+seed: 7
+num_workers: 4
+use_amp: false
+run_tag: ""
+train_fraction: 0.90
+val_fraction: 0.05
+
+clip_model_id: "openai/clip-vit-base-patch32"
+hf_cache_dir: "/home/ubuntu/.cache/huggingface"
+local_files_only: false
+
+d_model: 512
+num_heads: 8
+num_layers: 4
+ffn_multiplier: 4
+action_dropout: 0.0
+pos_norm_denom: 1.0
+
+integration_steps: 30
+inference_samples: 4
+
+table_label: "table surface center"
+table_xyz_world: [0.0, 0.0, 0.53]
+
+explode_instruction_variants: false
+
+normalization_eps: 1.0e-8
+
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "action_trajectory_200k"
+wandb_run_name: ""
+wandb_tags: ["brush", "dataset_0008", "200k", "procedural"]
+wandb_notes: "200k expanded brush procedural trajectory run"
+wandb_prediction_num_examples: 10
+
+cosine_warmup_steps: 500

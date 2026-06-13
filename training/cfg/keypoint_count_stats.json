@@ -1,0 +1,5180 @@
+{
+  "dataset_dir": "/home/ubuntu/Generative_STR/training/datasets/dataset_0006/shards",
+  "num_shards": 858,
+  "keypoint_count_min": 4,
+  "keypoint_count_max": 24,
+  "keypoint_count_mean": 12.357808857808857,
+  "keypoint_count_median": 13.0,
+  "histogram": {
+    "4": 7,
+    "5": 9,
+    "6": 31,
+    "7": 43,
+    "8": 54,
+    "9": 58,
+    "10": 50,
+    "11": 82,
+    "12": 78,
+    "13": 104,
+    "14": 106,
+    "15": 75,
+    "16": 61,
+    "17": 42,
+    "18": 25,
+    "19": 20,
+    "20": 7,
+    "21": 4,
+    "22": 1,
+    "24": 1
+  },
+  "per_shard": [
+    {
+      "scene_id": "scene_00002",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00002_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00003",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00003_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00004",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00004_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00005",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00005_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00006",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00006_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00007",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00007_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00008",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00008_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00009",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00009_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00010",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00010_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00011",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00011_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00012",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00012_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00013",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00013_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00014",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00014_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00015",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00015_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00016",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00016_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00017",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00017_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00018",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00018_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00019",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00019_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00020",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00020_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00021",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00021_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00022",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00022_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00023",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00023_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00024",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00024_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00025",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00025_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00026",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00026_shard.json",
+      "keypoint_count": 4,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00027",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00027_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00028",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00028_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00029",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00029_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00030",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00030_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00031",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00031_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00032",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00032_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00033",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00033_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00034",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00034_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00035",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00035_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00036",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00036_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00037",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00037_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00038",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00038_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00039",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00039_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00040",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00040_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00041",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00041_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00042",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00042_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00043",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00043_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00044",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00044_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00045",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00045_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00046",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00046_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00047",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00047_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00048",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00048_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00049",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00049_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00050",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00050_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00051",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00051_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00052",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00052_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00053",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00053_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00054",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00054_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00055",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00055_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00056",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00056_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00057",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00057_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00058",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00058_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00059",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00059_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00060",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00060_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00061",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00061_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00062",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00062_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00063",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00063_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00064",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00064_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00065",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00065_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00066",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00066_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00067",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00067_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00068",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00068_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00069",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00069_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00070",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00070_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00071",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00071_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00072",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00072_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00073",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00073_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00074",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00074_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00075",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00075_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00076",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00076_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00077",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00077_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00078",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00078_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00079",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00079_shard.json",
+      "keypoint_count": 5,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00080",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00080_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00081",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00081_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00082",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00082_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00083",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00083_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00084",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00084_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00085",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00085_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00086",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00086_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00087",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00087_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00088",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00088_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00089",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00089_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00090",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00090_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00091",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00091_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00092",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00092_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00093",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00093_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00094",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00094_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00095",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00095_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00096",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00096_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00097",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00097_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00098",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00098_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00099",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00099_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00100",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00100_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00101",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00101_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00102",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00102_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00103",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00103_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00104",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00104_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00105",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00105_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00106",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00106_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00107",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00107_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00108",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00108_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00109",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00109_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00110",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00110_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00111",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00111_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00112",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00112_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00113",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00113_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00114",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00114_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00115",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00115_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00116",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00116_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00117",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00117_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00118",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00118_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00119",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00119_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00120",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00120_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00121",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00121_shard.json",
+      "keypoint_count": 4,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00122",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00122_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00123",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00123_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00124",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00124_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00125",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00125_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00126",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00126_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00127",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00127_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00128",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00128_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00129",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00129_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00130",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00130_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00131",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00131_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00132",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00132_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00133",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00133_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00134",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00134_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00135",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00135_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00136",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00136_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00137",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00137_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00138",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00138_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00139",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00139_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00140",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00140_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00141",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00141_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00142",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00142_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00143",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00143_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00144",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00144_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00145",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00145_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00146",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00146_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00147",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00147_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00148",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00148_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00149",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00149_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00150",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00150_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00151",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00151_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00152",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00152_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00153",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00153_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00154",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00154_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00155",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00155_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00156",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00156_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00157",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00157_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00158",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00158_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00159",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00159_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00160",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00160_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00161",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00161_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00162",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00162_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00163",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00163_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00164",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00164_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00165",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00165_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00166",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00166_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00167",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00167_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00168",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00168_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00169",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00169_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00170",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00170_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00192",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00192_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00193",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00193_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00194",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00194_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00195",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00195_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00196",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00196_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00197",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00197_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00198",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00198_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00199",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00199_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00200",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00200_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00201",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00201_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00202",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00202_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00203",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00203_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00204",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00204_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00205",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00205_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00206",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00206_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00207",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00207_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00208",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00208_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00209",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00209_shard.json",
+      "keypoint_count": 21,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00210",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00210_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00211",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00211_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00212",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00212_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00213",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00213_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00214",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00214_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00215",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00215_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00216",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00216_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00217",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00217_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00218",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00218_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00219",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00219_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00220",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00220_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00221",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00221_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00222",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00222_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00223",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00223_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00224",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00224_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00225",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00225_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00227",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00227_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00228",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00228_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00229",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00229_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00230",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00230_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00231",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00231_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00282",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00282_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00283",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00283_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00284",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00284_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00285",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00285_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00286",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00286_shard.json",
+      "keypoint_count": 5,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00287",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00287_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00288",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00288_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00289",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00289_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00290",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00290_shard.json",
+      "keypoint_count": 20,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00291",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00291_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00292",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00292_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00293",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00293_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00294",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00294_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00295",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00295_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00296",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00296_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 49
+    },
+    {
+      "scene_id": "scene_00297",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00297_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00298",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00298_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00299",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00299_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00300",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00300_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00301",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00301_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00302",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00302_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00303",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00303_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00304",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00304_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00305",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00305_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00306",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00306_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00307",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00307_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00308",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00308_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00309",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00309_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00310",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00310_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00311",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00311_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00332",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00332_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00333",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00333_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00334",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00334_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00335",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00335_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00336",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00336_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00337",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00337_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00338",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00338_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00339",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00339_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00340",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00340_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00341",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00341_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00342",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00342_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00343",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00343_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00344",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00344_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00345",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00345_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00346",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00346_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00347",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00347_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00348",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00348_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00349",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00349_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00350",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00350_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00351",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00351_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00352",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00352_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00353",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00353_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00354",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00354_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00355",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00355_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00356",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00356_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00357",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00357_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00358",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00358_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00359",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00359_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00360",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00360_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00361",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00361_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00382",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00382_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00383",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00383_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00384",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00384_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00385",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00385_shard.json",
+      "keypoint_count": 4,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00386",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00386_shard.json",
+      "keypoint_count": 21,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00387",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00387_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00388",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00388_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00389",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00389_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00390",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00390_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00391",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00391_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00402",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00402_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00403",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00403_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00404",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00404_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00405",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00405_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00406",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00406_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00407",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00407_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00408",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00408_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00409",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00409_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00410",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00410_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00411",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00411_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00422",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00422_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00423",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00423_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00424",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00424_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00425",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00425_shard.json",
+      "keypoint_count": 20,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00426",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00426_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00427",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00427_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00428",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00428_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00429",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00429_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00430",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00430_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00431",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00431_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00432",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00432_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00433",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00433_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00434",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00434_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00435",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00435_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00436",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00436_shard.json",
+      "keypoint_count": 5,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00437",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00437_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00438",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00438_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00439",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00439_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00440",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00440_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00441",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00441_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00442",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00442_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00443",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00443_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00444",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00444_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00445",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00445_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00446",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00446_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00447",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00447_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00448",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00448_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00449",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00449_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00450",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00450_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00451",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00451_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00462",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00462_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00463",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00463_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00464",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00464_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00465",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00465_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00466",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00466_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00467",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00467_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00468",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00468_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00469",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00469_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00470",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00470_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00471",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00471_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00482",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00482_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00483",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00483_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00484",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00484_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00485",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00485_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00486",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00486_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00487",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00487_shard.json",
+      "keypoint_count": 4,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00488",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00488_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00489",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00489_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00490",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00490_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00491",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00491_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00492",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00492_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00493",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00493_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00494",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00494_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00495",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00495_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00496",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00496_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00497",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00497_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00498",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00498_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00499",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00499_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00500",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00500_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00501",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00501_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00512",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00512_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00513",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00513_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00514",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00514_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00515",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00515_shard.json",
+      "keypoint_count": 21,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00516",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00516_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00517",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00517_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00518",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00518_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00519",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00519_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00520",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00520_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00521",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00521_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00522",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00522_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00523",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00523_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00524",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00524_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00525",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00525_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00526",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00526_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00527",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00527_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00528",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00528_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00529",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00529_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00530",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00530_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00531",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00531_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00532",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00532_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00533",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00533_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00534",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00534_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00535",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00535_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00536",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00536_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00537",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00537_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00538",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00538_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00539",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00539_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00540",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00540_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00541",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00541_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00542",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00542_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00543",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00543_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00544",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00544_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00545",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00545_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00546",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00546_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00547",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00547_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00548",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00548_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00549",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00549_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00550",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00550_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00551",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00551_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00552",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00552_shard.json",
+      "keypoint_count": 4,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00553",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00553_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00554",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00554_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00555",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00555_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00556",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00556_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00557",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00557_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00558",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00558_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00559",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00559_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00560",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00560_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00561",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00561_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00562",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00562_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00563",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00563_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00564",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00564_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00565",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00565_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00566",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00566_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00567",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00567_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00568",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00568_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00569",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00569_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00570",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00570_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00571",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00571_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00572",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00572_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00573",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00573_shard.json",
+      "keypoint_count": 21,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00574",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00574_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00575",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00575_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00576",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00576_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00577",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00577_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00578",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00578_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00579",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00579_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00580",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00580_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00581",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00581_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00582",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00582_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00583",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00583_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00584",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00584_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00585",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00585_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00586",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00586_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00587",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00587_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00588",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00588_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00589",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00589_shard.json",
+      "keypoint_count": 5,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00590",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00590_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00591",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00591_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00592",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00592_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00593",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00593_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00594",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00594_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00595",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00595_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00596",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00596_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00597",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00597_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00598",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00598_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00599",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00599_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00600",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00600_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00601",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00601_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00602",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00602_shard.json",
+      "keypoint_count": 20,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00603",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00603_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00604",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00604_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00605",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00605_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00606",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00606_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00607",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00607_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00608",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00608_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00609",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00609_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00610",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00610_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00611",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00611_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00612",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00612_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00613",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00613_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00614",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00614_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00615",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00615_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00616",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00616_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00617",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00617_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00618",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00618_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00619",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00619_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00620",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00620_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00621",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00621_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00622",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00622_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00623",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00623_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00624",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00624_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00625",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00625_shard.json",
+      "keypoint_count": 4,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00626",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00626_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00627",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00627_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00628",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00628_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00629",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00629_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00630",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00630_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00631",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00631_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00632",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00632_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00633",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00633_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00634",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00634_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00635",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00635_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00636",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00636_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00637",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00637_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00638",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00638_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00639",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00639_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00640",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00640_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00641",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00641_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00642",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00642_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00643",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00643_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00644",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00644_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00645",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00645_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00646",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00646_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00647",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00647_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00648",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00648_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00649",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00649_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00650",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00650_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00651",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00651_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00652",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00652_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00653",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00653_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00654",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00654_shard.json",
+      "keypoint_count": 20,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00655",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00655_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00656",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00656_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00657",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00657_shard.json",
+      "keypoint_count": 4,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00658",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00658_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00659",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00659_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00660",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00660_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00661",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00661_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00662",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00662_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00663",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00663_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00664",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00664_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00665",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00665_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00666",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00666_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00667",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00667_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00668",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00668_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00669",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00669_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00670",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00670_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00671",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00671_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00672",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00672_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00673",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00673_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00674",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00674_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00675",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00675_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00676",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00676_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00677",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00677_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00678",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00678_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00679",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00679_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00680",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00680_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00681",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00681_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00682",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00682_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00683",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00683_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00684",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00684_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00685",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00685_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00686",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00686_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00687",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00687_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00688",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00688_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00689",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00689_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00690",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00690_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00691",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00691_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00692",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00692_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00693",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00693_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00694",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00694_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00695",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00695_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00696",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00696_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00697",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00697_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00698",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00698_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00699",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00699_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00700",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00700_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00701",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00701_shard.json",
+      "keypoint_count": 5,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00702",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00702_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00703",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00703_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00704",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00704_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00705",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00705_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00706",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00706_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00707",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00707_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00708",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00708_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00709",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00709_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00710",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00710_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00711",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00711_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00712",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00712_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00713",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00713_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00714",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00714_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00715",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00715_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00716",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00716_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00717",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00717_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00718",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00718_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00719",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00719_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00720",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00720_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00721",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00721_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00722",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00722_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00723",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00723_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00724",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00724_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00725",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00725_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00726",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00726_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00727",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00727_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00728",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00728_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00729",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00729_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00730",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00730_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00731",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00731_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00732",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00732_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00733",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00733_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00734",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00734_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00735",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00735_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00736",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00736_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00737",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00737_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00738",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00738_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00739",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00739_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00740",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00740_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00741",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00741_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00742",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00742_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00743",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00743_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00744",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00744_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00745",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00745_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00746",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00746_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00747",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00747_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00748",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00748_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00749",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00749_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00750",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00750_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00751",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00751_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00752",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00752_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00753",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00753_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00754",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00754_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00755",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00755_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00756",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00756_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00757",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00757_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00758",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00758_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00759",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00759_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00760",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00760_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00761",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00761_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00762",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00762_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00763",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00763_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00764",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00764_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00765",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00765_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00766",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00766_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00767",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00767_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00768",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00768_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00769",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00769_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00770",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00770_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00771",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00771_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00772",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00772_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00773",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00773_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00774",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00774_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00775",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00775_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00776",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00776_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00777",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00777_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00778",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00778_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00779",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00779_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00780",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00780_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00781",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00781_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00782",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00782_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00783",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00783_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00784",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00784_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00785",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00785_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00786",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00786_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00787",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00787_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00788",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00788_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00789",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00789_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00790",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00790_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00791",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00791_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00792",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00792_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00793",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00793_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00794",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00794_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00795",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00795_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00796",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00796_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00797",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00797_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00798",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00798_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00799",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00799_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00800",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00800_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00801",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00801_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00802",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00802_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00803",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00803_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00804",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00804_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00805",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00805_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00806",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00806_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00807",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00807_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00808",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00808_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00809",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00809_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00810",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00810_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00811",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00811_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00812",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00812_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00813",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00813_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00814",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00814_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00815",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00815_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00816",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00816_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00817",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00817_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00818",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00818_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00819",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00819_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00820",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00820_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00821",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00821_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00822",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00822_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00823",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00823_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00824",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00824_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00825",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00825_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00826",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00826_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00827",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00827_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00828",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00828_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00829",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00829_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00830",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00830_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00831",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00831_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00832",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00832_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00833",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00833_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00834",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00834_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00835",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00835_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00837",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00837_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00838",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00838_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00839",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00839_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00840",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00840_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00841",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00841_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00842",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00842_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00843",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00843_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00844",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00844_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00845",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00845_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00846",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00846_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00847",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00847_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00848",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00848_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00849",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00849_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00850",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00850_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00851",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00851_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00852",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00852_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00853",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00853_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00854",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00854_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00855",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00855_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00856",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00856_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00857",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00857_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00858",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00858_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00859",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00859_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00860",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00860_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00861",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00861_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00862",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00862_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00863",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00863_shard.json",
+      "keypoint_count": 20,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00864",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00864_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00865",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00865_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00866",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00866_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00867",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00867_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00868",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00868_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00869",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00869_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00870",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00870_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00871",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00871_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00872",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00872_shard.json",
+      "keypoint_count": 5,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00873",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00873_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00874",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00874_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00875",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00875_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00876",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00876_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00877",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00877_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00878",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00878_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00879",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00879_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00880",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00880_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00881",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00881_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00882",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00882_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00883",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00883_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00884",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00884_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00885",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00885_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00886",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00886_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00887",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00887_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00888",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00888_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00889",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00889_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00890",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00890_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00891",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00891_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00892",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00892_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00893",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00893_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00894",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00894_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00895",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00895_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00896",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00896_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00897",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00897_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00898",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00898_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00899",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00899_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00900",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00900_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00901",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00901_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00902",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00902_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00903",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00903_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00904",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00904_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00905",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00905_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00906",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00906_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00907",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00907_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00908",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00908_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00909",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00909_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00910",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00910_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00911",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00911_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00912",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00912_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00913",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00913_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00914",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00914_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00915",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00915_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00916",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00916_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00917",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00917_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00918",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00918_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00919",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00919_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00920",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00920_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00921",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00921_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00922",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00922_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00923",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00923_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00924",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00924_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00925",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00925_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00926",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00926_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00927",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00927_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00928",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00928_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00929",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00929_shard.json",
+      "keypoint_count": 5,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00930",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00930_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00931",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00931_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00932",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00932_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00933",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00933_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00934",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00934_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00935",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00935_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00936",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00936_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00937",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00937_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00938",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00938_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00939",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00939_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00940",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00940_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00941",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00941_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00942",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00942_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00943",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00943_shard.json",
+      "keypoint_count": 20,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00944",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00944_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00945",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00945_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00946",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00946_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00947",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00947_shard.json",
+      "keypoint_count": 22,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00948",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00948_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00949",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00949_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00950",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00950_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00951",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00951_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00952",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00952_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00953",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00953_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00954",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00954_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00955",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00955_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00956",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00956_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00957",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00957_shard.json",
+      "keypoint_count": 20,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00958",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00958_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00959",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00959_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00960",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00960_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00961",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00961_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00962",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00962_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00963",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00963_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00964",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00964_shard.json",
+      "keypoint_count": 5,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00965",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00965_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00966",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00966_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00967",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00967_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00968",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00968_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00969",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00969_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00970",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00970_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00971",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00971_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00973",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00973_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00974",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00974_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00975",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00975_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00976",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00976_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00977",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00977_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00978",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00978_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00979",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00979_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00980",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00980_shard.json",
+      "keypoint_count": 7,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00981",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00981_shard.json",
+      "keypoint_count": 24,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00982",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00982_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00983",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00983_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00984",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00984_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00985",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00985_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00986",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00986_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00987",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00987_shard.json",
+      "keypoint_count": 5,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00988",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00988_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00989",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00989_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00990",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00990_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00991",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00991_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00992",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00992_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00993",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00993_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00994",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00994_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00995",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00995_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00996",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00996_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00997",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00997_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00998",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00998_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_00999",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_00999_shard.json",
+      "keypoint_count": 9,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01000",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01000_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01001",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01001_shard.json",
+      "keypoint_count": 8,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01002",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01002_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01003",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01003_shard.json",
+      "keypoint_count": 6,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01004",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01004_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01005",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01005_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01006",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01006_shard.json",
+      "keypoint_count": 12,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01007",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01007_shard.json",
+      "keypoint_count": 16,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01008",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01008_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01009",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01009_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01010",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01010_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01011",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01011_shard.json",
+      "keypoint_count": 10,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01012",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01012_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01013",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01013_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01014",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01014_shard.json",
+      "keypoint_count": 17,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01015",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01015_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01016",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01016_shard.json",
+      "keypoint_count": 18,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01017",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01017_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01018",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01018_shard.json",
+      "keypoint_count": 13,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01019",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01019_shard.json",
+      "keypoint_count": 11,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01020",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01020_shard.json",
+      "keypoint_count": 14,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01021",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01021_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01022",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01022_shard.json",
+      "keypoint_count": 15,
+      "datapoint_count": 50
+    },
+    {
+      "scene_id": "scene_01023",
+      "shard_path": "training/datasets/dataset_0006/shards/scene_01023_shard.json",
+      "keypoint_count": 19,
+      "datapoint_count": 50
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+Continue this exact scene with realistic, continuous motion from the first frame.
+
+The person reaches down with their hand, grasps the large brush by its handle, and lifts
+it up from the table. They use the brush to sweep the small orange scraps in a smooth,
+deliberate motion across the surface, pushing the scraps into the green rectangular tray
+or bucket at the side—everything ends up inside that container.
+
+Important constraints: keep the green tray or bucket fixed in place on the table; do not
+slide, tilt, or reposition it. Only the person's arms and the brush move. The robotic arm
+and background stay as they are. Maintain the same lighting, camera angle, and lab setting;
+natural hand motion and believable physics. The camera should not move at all. The person
+should use the same hand to sweep the scraps into the tray.

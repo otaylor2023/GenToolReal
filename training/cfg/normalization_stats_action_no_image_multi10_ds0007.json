@@ -1,0 +1,45 @@
+{
+  "scene_id": "multi",
+  "shard_path": "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00002_shard.json",
+  "shard_paths": [
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00002_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00003_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00004_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00005_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00006_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00007_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00008_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00009_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00010_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_00011_shard.json"
+  ],
+  "scene_ids": [
+    "scene_00002",
+    "scene_00003",
+    "scene_00004",
+    "scene_00005",
+    "scene_00006",
+    "scene_00007",
+    "scene_00008",
+    "scene_00009",
+    "scene_00010",
+    "scene_00011"
+  ],
+  "xyz_mean": [
+    0.004916511534463444,
+    -0.06449880963769618,
+    0.5927057429987602
+  ],
+  "xyz_std": [
+    0.3896645477741773,
+    0.33594212008323104,
+    0.058035166931722344
+  ],
+  "norm_eps": 1e-08,
+  "num_points": 6201,
+  "table_xyz_world": [
+    0.0,
+    0.0,
+    0.53
+  ]
+}

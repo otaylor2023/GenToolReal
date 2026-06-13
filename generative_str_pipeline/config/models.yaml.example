@@ -1,0 +1,84 @@
+# Copy to models.yaml. Each infer_command is a concrete invocation (no null placeholders).
+# Run from repo root or set absolute paths. Use the ML venv: generative_str_pipeline/.venv
+
+video_gen:
+  - id: cogvideox_i2v
+    backend: local
+    family: cogvideox
+    hf_model_id: THUDM/CogVideoX1.5-5B-I2V
+    infer_command: >-
+      bash -lc 'cd generative_str_pipeline && . .venv/bin/activate &&
+      gstr run-video-gen --model cogvideox_i2v --capture-dir CAPTURE --video-gen-dir VIDEO_GEN
+      --num-frames 49 --seed 0'
+    notes: "Requires meta/prompt.txt or --prompt; uses sequential CPU offload on CUDA."
+
+  - id: wan_i2v
+    backend: local
+    family: wan
+    hf_model_id: Wan-AI/Wan2.1-I2V-14B-480P
+    infer_command: >-
+      bash -lc 'cd generative_str_pipeline && . .venv/bin/activate &&
+      gstr run-video-gen --model wan_i2v --capture-dir CAPTURE --video-gen-dir VIDEO_GEN
+      --wan-ckpt-dir WAN_CKPT_DIR --num-frames 81 --seed 0'
+    notes: >-
+      Install Wan2.1 with `uv pip install git+https://github.com/Wan-Video/Wan2.1.git --no-deps`
+      plus deps; omit flash-attn to use PyTorch SDPA (slower). Download weights into WAN_CKPT_DIR.
+
+  - id: ltx
+    backend: local
+    family: ltx_video
+    hf_model_id: Lightricks/LTX-Video
+    infer_command: >-
+      bash -lc 'cd generative_str_pipeline && . .venv/bin/activate &&
+      gstr run-video-gen --model ltx_i2v --capture-dir CAPTURE --video-gen-dir VIDEO_GEN
+      --num-frames 121 --seed 0'
+    notes: "Diffusers LTXImageToVideoPipeline; tune num_frames for VRAM."
+
+# MDE rgb-dir: must contain every RGB the trajectory will use—typically symlink or copy
+# capture/rgb/frame_0000.png together with video_gen/rgb/frame_0001.png … into one folder.
+
+mde:
+  - id: da3
+    backend: local
+    family: depth_anything_3
+    hf_model_id: depth-anything/DA3-LARGE-1.1
+    infer_command: >-
+      bash -lc 'cd generative_str_pipeline && . .venv/bin/activate &&
+      gstr run-mde --model da3 --rgb-dir RGB_DIR --out-dir MDE_RAW'
+    notes: "Pass --cam-k CAPTURE/cam_K.txt when you want DA3 to use known intrinsics."
+
+  - id: marigold
+    backend: local
+    family: marigold
+    hf_model_id: prs-eth/marigold-depth-lcm-v1-0
+    infer_command: >-
+      bash -lc 'cd generative_str_pipeline && . .venv/bin/activate &&
+      gstr run-mde --model marigold --rgb-dir RGB_DIR --out-dir MDE_RAW'
+
+  - id: unidepth_v2
+    backend: local
+    family: unidepth_v2
+    hf_model_id: lpiccinelli/unidepth-v2-vitl14
+    infer_command: >-
+      bash -lc 'cd generative_str_pipeline && . .venv/bin/activate &&
+      gstr run-mde --model unidepth_v2 --rgb-dir RGB_DIR --out-dir MDE_RAW
+      --cam-k CAPTURE/cam_K.txt'
+
+  - id: moge2
+    backend: local
+    family: moge2
+    hf_model_id: Ruicheng/moge-2-vitl-normal
+    infer_command: >-
+      bash -lc 'cd generative_str_pipeline && . .venv/bin/activate &&
+      gstr run-mde --model moge2 --rgb-dir RGB_DIR --out-dir MDE_RAW'
+
+foundationpose_rgbd:
+  id: foundationpose_kushal_fork
+  backend: local
+  repo: "https://github.com/kushal2000/FoundationPose"
+  notes: "Single RGB-D pose head; not swept"
+
+capture_from_data:
+  infer_command: >-
+    bash -lc 'cd generative_str_pipeline && . .venv/bin/activate &&
+    gstr prepare-capture-from-data --data-root ../../data --capture-out RUN/capture'

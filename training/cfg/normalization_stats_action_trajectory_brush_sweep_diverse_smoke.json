@@ -1,0 +1,31 @@
+{
+  "scene_id": "multi",
+  "shard_path": "/home/ubuntu/Generative_STR/training/datasets/dataset_0009_brush_sweep_diverse/shards/brush_sweep_diverse_0000_shard.json",
+  "shard_paths": [
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0009_brush_sweep_diverse/shards/brush_sweep_diverse_0000_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0009_brush_sweep_diverse/shards/brush_sweep_diverse_0001_shard.json",
+    "/home/ubuntu/Generative_STR/training/datasets/dataset_0009_brush_sweep_diverse/shards/brush_sweep_diverse_0002_shard.json"
+  ],
+  "scene_ids": [
+    "brush_sweep_diverse_0000",
+    "brush_sweep_diverse_0001",
+    "brush_sweep_diverse_0002"
+  ],
+  "xyz_mean": [
+    0.0013448769264050005,
+    -1.20060173125997e-05,
+    0.611733923467497
+  ],
+  "xyz_std": [
+    0.17602171508955503,
+    0.17586332546653716,
+    0.09175689083435375
+  ],
+  "norm_eps": 1e-08,
+  "num_points": 60000,
+  "table_xyz_world": [
+    0.0,
+    0.0,
+    0.53
+  ]
+}

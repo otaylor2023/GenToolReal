@@ -1,0 +1,76 @@
+# GRPO fine-tuning of action_trajectory VLA with vectorized IsaacGym rollouts.
+#
+# Smoke test (policy_exec env):
+#   cd policy_exec && conda run -n policy_exec --no-capture-output \
+#     python -m training.action_trajectory_rl.train_grpo \
+#     --config ../training/cfg/action_trajectory_grpo.yaml \
+#     --num_iterations 2 --num_scenes 2 --group_size 2 --skip_sim
+
+config: "training/cfg/action_trajectory_brush_sweep_reactive.yaml"
+checkpoint: "training/runs/action_trajectory/run_0016/checkpoint_best.pt"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_brush_sweep_reactive.json"
+
+policy_exec_config: "policy_exec/pretrained_policy/config.yaml"
+policy_exec_checkpoint: "policy_exec/pretrained_policy/model.pth"
+control_frame: "generative_str_pipeline/assets/object_control_points/blue_brush.json"
+
+output_dir: "training/runs/action_trajectory_grpo"
+
+num_iterations: 2500
+num_scenes: 8
+group_size: 4
+integration_steps: 30
+sde_sigma: 0.02
+grpo_clip: 0.2
+kl_coef: 0.01
+inner_epochs: 2
+lr: 0.00005
+steps_per_segment: 1
+lift_z: 0.0
+z_offset: 0.0
+# 900 steps @ 60 Hz = 15 s per rollout (also raises env episodeLength to match).
+max_rollout_steps: 900
+# Roll each sampled trajectory N times and average the reward (denoise sim physics).
+reward_rollout_repeats: 4
+seed: 0
+
+# Ball placement is the objective (max 1.0); trajectory-following is a minor
+# shaping term (max 0.25) since the brush already follows trajectories well.
+reward_w_track: 0.25
+reward_w_ball: 1.0
+ball_success_radius_m: 0.06
+
+skip_sim: false
+headless: true
+
+# Experiment tracking
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "grpo_sweep_sim"
+wandb_run_name: ""
+wandb_run_prefix: "sim_VLA"
+use_closed_loop: true
+# Model plans 15 waypoints; in sim, execute only the first 5 of each plan, then
+# re-observe the cube and replan. Allow up to 30 replans so the brush can keep
+# nudging the cube toward the goal; an env stops early on success (cube in goal),
+# failure (cube off the table), or after a few stalled replans (next waypoint
+# stayed unreachable).
+closed_loop_chunk_size: 5
+closed_loop_max_replans: 30
+closed_loop_max_steps_per_chunk: 200
+# Total sim-step budget across all 30 replans (separate from the 900-step env
+# episode length, which acts as the per-env no-progress timeout).
+closed_loop_max_total_steps: 3000
+closed_loop_max_stall_replans: 3
+off_table_drop_m: 0.08
+
+wandb_tags: ["dataset_0011", "reactive", "closed_loop", "fifteen_waypoints", "cube", "wide_table"]
+wandb_notes: "GRPO reactive VLA (run_0015): closed-loop, execute 5 of 15 planned waypoints then replan (up to 30 replans); stop on success/off-table/stall; wide table; 15s rollouts"
+
+# Qualitative rollout: log video_num_envs separate videos (distinct scenes,
+# strided by group_size) to wandb as rollout/envN, every N iters.
+video_every: 10
+video_capture_interval: 4
+video_fps: 15
+video_num_envs: 8

@@ -1,0 +1,21 @@
+{
+  "scene_id": "scene_03546",
+  "shard_path": "/home/ubuntu/Generative_STR/training/datasets/dataset_0007/shards/scene_03546_shard.json",
+  "xyz_mean": [
+    -0.14821877411088427,
+    -0.08752025275332749,
+    0.5989832810339752
+  ],
+  "xyz_std": [
+    0.23673425543509413,
+    0.31713725941321,
+    0.06217676596326847
+  ],
+  "norm_eps": 1e-08,
+  "num_points": 629,
+  "table_xyz_world": [
+    0.0,
+    0.0,
+    0.53
+  ]
+}

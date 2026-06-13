@@ -1,0 +1,64 @@
+# GRPO fine-tuning of the spatula-flip VLA from the 10-epoch dataset_0012 pretrain.
+# The checkpoint field is updated after pretraining completes.
+
+config: "training/cfg/action_trajectory_spatula_flip_reactive_10epoch.yaml"
+checkpoint: "training/runs/action_trajectory/run_0021/checkpoint_epoch_0010.pt"
+normalization_stats_path: "training/cfg/normalization_stats_action_trajectory_spatula_flip_reactive.json"
+
+policy_exec_config: "policy_exec/pretrained_policy/config.yaml"
+policy_exec_checkpoint: "policy_exec/pretrained_policy/model.pth"
+control_frame: "generative_str_pipeline/assets/object_control_points/flat_spatula.json"
+
+task_type: "spatula_flip"
+object_name: "flat_spatula"
+tool_obj_path: "policy_exec/assets/urdf/dextoolbench/spatula/flat_spatula/flat_spatula.obj"
+
+output_dir: "training/runs/action_trajectory_grpo"
+
+num_iterations: 2500
+num_scenes: 8
+group_size: 4
+integration_steps: 30
+sde_sigma: 0.02
+grpo_clip: 0.2
+kl_coef: 0.01
+inner_epochs: 2
+lr: 0.00005
+steps_per_segment: 1
+lift_z: 0.0
+z_offset: 0.0
+max_rollout_steps: 900
+reward_rollout_repeats: 4
+seed: 0
+
+reward_w_flip: 1.0
+flip_inverted_dot_max: -0.5
+flip_settle_tol_m: 0.04
+flip_material_half_z_m: 0.006
+flip_partial_scale: 0.5
+off_table_drop_m: 0.10
+
+skip_sim: false
+headless: true
+
+use_wandb: true
+wandb_project: "generative-str-action-expert"
+wandb_entity: ""
+wandb_group: "grpo_spatula_flip_sim"
+wandb_run_name: ""
+wandb_run_prefix: "spatula_sim_VLA_from_10epoch"
+
+use_closed_loop: true
+closed_loop_chunk_size: 5
+closed_loop_max_replans: 30
+closed_loop_max_steps_per_chunk: 200
+closed_loop_max_total_steps: 3000
+closed_loop_max_stall_replans: 3
+
+wandb_tags: ["dataset_0012", "spatula", "flip", "reactive", "closed_loop", "pan", "10epoch_pretrain"]
+wandb_notes: "GRPO spatula flip from 10-epoch dataset_0012 pretrain; closed-loop execute-5-of-15 and train in sim."
+
+video_every: 10
+video_capture_interval: 4
+video_fps: 15
+video_num_envs: 8
